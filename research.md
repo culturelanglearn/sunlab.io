@@ -15,6 +15,6 @@ Here are some themes and techniques that we currently work on:
 **Functional Near Infrared Spectroscopy (fNRIS).**  fNIRS is a non-invasive brain imaging technique that measures brain activity by detecting changes in blood oxygenation. Using near-infrared light, it monitors cortical neural function in real-time, offering a portable, quiet, and motion-tolerant alternative to fMRI—making it ideal for studying brain function in natural settings and diverse populations.
 
 
-![]({{ site.url }}{{ site.baseurl }}/images/respic/SciPost.png){: style="width: 70%; float: center; margin: 0px"}
+![]({{ site.url }}{{ site.baseurl }}/images/brain_weight.jpg){: style="width: 70%; float: center; margin: 0px"}
 
 ### ... and more.
