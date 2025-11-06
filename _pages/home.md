@@ -12,7 +12,7 @@ permalink: /
 
 **News: Our Lab is currently recruiting researchers and participants!** Join us! 
 
-We are a research group at [PolyU HK](https://research.polyu.edu.hk/en/) in the Department of [Language and Technology](https://research.polyu.edu.hk/en/organisations/department-of-language-science-and-technology/). 
+We are a research group at [PolyU HK](https://research.polyu.edu.hk/en/) in the Department of [Language and Technology](https://research.polyu.edu.hk/en/organisations/department-of-language-science-and-technology/). Our lab is directed by [Dr. Xin Sun](https://research.polyu.edu.hk/en/persons/xin-sun/), an assistant professor in the department. 
 
 Our research focsues on leveraging psychology, education, and language science to understand the heterogeneity of neurocognitive profiles among children from various linguistic and cultural backgrounds and integrating brain sciences into research and applications to benefit young learners, parents, and educational practitioners.
 
