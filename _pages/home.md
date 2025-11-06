@@ -19,6 +19,16 @@ Our research focsues on leveraging psychology, education, and language science t
 We have two overarching goals: first, 
 **to understand language development in children**, particularly how monolinguals vs. bilinguals put together words and word-compounds. Second, **to understand how LLM feedback helps with language aquisition** as LLM become more prevalent in today's education society. 
 
+**We are looking for passionate new PhD students, Postdocs, Master, and undergraduate students to join the team** [(more info)](https://culturelanglearn.github.io/sunlab.io/vacancies) **!**
+
+
+<figure class="third">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/polyU.png" style="width: 130px">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/LST.png" style="width: 140px">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo2.jpeg" style="width: 150px">
+</figure>
+
+
 <!-- SLIDE SHOW COMMENTED OUT - Audrey 06/11/2025
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
     Menu
@@ -64,14 +74,3 @@ We have two overarching goals: first,
   </a>
 </div>
 -->
-
-**We are looking for passionate new PhD students, Postdocs, Master, and undergraduate students to join the team** [(more info)](https://culturelanglearn.github.io/sunlab.io/vacancies) **!**
-
-
-<figure class="fifth">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/LMU_logo.png" style="width: 130px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_Leiden.jpg" style="width: 140px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Tschira.png" style="width: 150px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_ERC.jpg" style="width: 100px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/SuperC_logo.png" style="width: 100px">
-</figure>
