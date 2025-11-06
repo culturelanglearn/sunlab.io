@@ -1,8 +1,8 @@
-# Sun Lab Website
+# Culture, Language, & Learning Lab Website
 
-This is the website of our academic research group at PolyTechnic University of Hong Kong.
+Welcome to the github website for the Culture, Language, and Learning Lab at the Hong Kong PolyTechnic University.
 
-Test for Xin's Lab
+Our lab is directed by Dr. Xin Sun, assistant professor in the department of Language and Technology. 
 
 
 Copyright Allan Lab. Code released under the MIT License.
