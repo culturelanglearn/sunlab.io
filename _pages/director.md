@@ -1,6 +1,6 @@
 ---
 title: "Culture, Language, & Learning Lab - Director"
-layout: homelay
+layout: textlay
 excerpt: "Meet the Director of the Culture, Language, & Learning Lab at PolyU"
 sitemap: false
 permalink: /director/
