@@ -18,9 +18,10 @@ Our research focsues on leveraging psychology, education, and language science t
 
 We have two overarching goals: first, 
 **to understand language development in children**, particularly how monolinguals vs. bilinguals put together words and word-compounds. Second, **to understand how LLM feedback helps with language aquisition** as LLM become more prevalent in today's education society. 
+
 <!-- SLIDE SHOW COMMENTED OUT - Audrey 06/11/2025
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
-    <!-- Menu -->
+    Menu
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
@@ -31,7 +32,7 @@ We have two overarching goals: first,
         <li data-target="#carousel" data-slide-to="6"></li>
     </ol>
 
-    <!-- Items -->
+    Items
     <div class="carousel-inner" markdown="0">
         <div class="item active">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/QPI_Rh.jpg" alt="Slide 1" />
@@ -52,7 +53,7 @@ We have two overarching goals: first,
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/BSCCO2gap2.jpg" alt="Slide 6" />
         </div>
     </div>
-<!--
+
   <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -65,7 +66,6 @@ We have two overarching goals: first,
 -->
 
 **We are looking for passionate new PhD students, Postdocs, Master, and undergraduate students to join the team** [(more info)](https://culturelanglearn.github.io/sunlab.io/vacancies) **!**
-
 
 
 <figure class="fifth">
