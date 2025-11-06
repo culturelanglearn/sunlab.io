@@ -3,7 +3,7 @@ title: "Culture, Language, & Learning Lab - Director"
 layout: homelay
 excerpt: "Meet the Director of the Culture, Language, & Learning Lab at PolyU"
 sitemap: false
-permalink: /
+permalink: /director/
 ---
 <img src="{{ site.url }}{{ site.baseurl }}/images/team/Xin_profile.jpeg" alt="Culture, Language, & Learning Lab Logo" style="width: 80%; max-width: 600px; display: block; margin: 20px auto;">
 
