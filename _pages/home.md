@@ -1,10 +1,14 @@
 ---
-title: "Sun Lab - Home"
+title: "Culture, Language, & Learning Lab - Home"
 layout: homelay
-excerpt: "Sun Lab at the Hong Kong PolyTechnic University (PolyU)"
+excerpt: "Culture, Language, & Learning Lab at the Hong Kong PolyTechnic University (PolyU)"
 sitemap: false
 permalink: /
 ---
+<video autoplay muted loop style="width: 80%; max-width: 600px; display: block; margin: 20px auto;">
+  <source src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 **News: Our Lab is currently recruiting researchers and participants!** Join us! 
 
@@ -14,7 +18,7 @@ Our research focsues on leveraging psychology, education, and language science t
 
 We have two overarching goals: first, 
 **to understand language development in children**, particularly how monolinguals vs. bilinguals put together words and word-compounds. Second, **to understand how LLM feedback helps with language aquisition** as LLM become more prevalent in today's education society. 
-
+<!-- SLIDE SHOW COMMENTED OUT - Audrey 06/11/2025
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
     <!-- Menu -->
     <ol class="carousel-indicators">
@@ -48,6 +52,7 @@ We have two overarching goals: first,
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/BSCCO2gap2.jpg" alt="Slide 6" />
         </div>
     </div>
+<!--
   <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
@@ -57,13 +62,9 @@ We have two overarching goals: first,
     <span class="sr-only">Next</span>
   </a>
 </div>
+-->
 
-
-We are currently doing..... 
-
-**We are looking for passionate new PhD students, Postdocs, Master, and undergraduate students to join the team** [(more info)](https://achang3398.github.io/sunlabpolyuhk.io/vacancies) **!**
-
-
+**We are looking for passionate new PhD students, Postdocs, Master, and undergraduate students to join the team** [(more info)](https://culturelanglearn.github.io/sunlab.io/vacancies) **!**
 
 
 
