@@ -5,7 +5,7 @@ excerpt: "Meet the Director of the Culture, Language, & Learning Lab at PolyU"
 sitemap: false
 permalink: /director/
 ---
-<img src="{{ site.url }}{{ site.baseurl }}/images/team/Xin_profile.jpeg" alt="Culture, Language, & Learning Lab Logo" style="width: 65%; max-width: 450px; display: block; margin: 20px auto;">
+<img src="{{ site.url }}{{ site.baseurl }}/images/team/Xin_profile.jpeg" alt="Culture, Language, & Learning Lab Logo" style="width: 65%; max-width: 300px; display: block; margin: 20px auto;">
 
 <!-- LARGER IMAGE (06/11/2025)
 <img src="{{ site.url }}{{ site.baseurl }}/images/team/Xin_profile.jpeg" alt="Culture, Language, & Learning Lab Logo" style="width: 80%; max-width: 600px; display: block; margin: 20px auto;">
