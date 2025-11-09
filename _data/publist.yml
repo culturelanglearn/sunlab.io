@@ -1,17 +1,30 @@
-- title: "Growth mindset in Chinese culture: A meta-analysis"
-  image: GAS.png 
-  description: The current meta-analysis aimed to characterize intelligence mindset beliefs among Chinese individuals by mapping out their level of growth mindset endorsement and its relationship with psycho-educational outcomes.  
-  authors: Wang, Y., & Sun, X. 
-  link:
-    url: https://link.springer.com/article/10.1007/s11218-024-09955-7
-    display: Springer (2025)
-  highlight: 1
+- authors: "<u>Wang, Y., Khadra, L.</u>, & Sun, X. +"
+  year: "2025"
+  title: "Perceptions of Academic Ups and Downs: A Cross-cultural Comparison of Beliefs in Chinese and Canadian Children."
+  journal: "Child Development"
+  volume: "In Press"
 
-- title: "Neural processing of children’s theory of mind in a naturalistic story-listening paradigm"
-  image: GAS.png 
-  description: Neuroimaging of Theory of mind (ToM) in young children often faces challenges in ecological validity and quality data collection. We developed and implemented an innovative naturalistic story-listening paradigm, which is child-friendly, engaging, and ecologically valid, to shed light on ToM neural mechanisms in childhood.
-  authors: Yu, C. L., Eggleston, R. L., Zhang, K., Nickerson, N., Sun, X., Marks, R. A., Hu, X., Brennan, J. R., Wellman, H. M., & Kovelman, I. 
-  link:
-    url: https://academic.oup.com/scan/article/20/1/nsaf022/8045374
-    display: Oxford Academic (2025)
-  highlight: 2
+- authors: "Tang, X., Sun, X., & Guo, J. "
+  year: "2025" 
+  title: "Relations of an implicit measure of growth mindset with its explicit measures and academic performance"
+  journal: "Social Psychology of Education"
+  volume: "28"
+  issue: "166"
+  doi: "https://doi.org/10.1007/s11218-025-10125-6"
+  
+- authors: "Yu, C.L., Eggleston, R., Zhang, K., Nickerson, N., Sun, X., Marks, R.A., Hu, X., Brennan, J., Wellman, H., Kovelman, I. "
+  year: "2025" 
+  title: "Neural processing of children’s theory of mind in a naturalistic story-listening paradigm"
+  journal: "Social Cognitive and Affective Neuroscience"
+  volume: "20"
+  issue: "1"
+  doi: "https://doi.org/10.1093/scan/nsaf022"
+
+- authors: "<u>Wang, Y</u> & Sun, X. +"
+  year: "2025" 
+  title: "Growth mindset in Chinese culture: A meta-analysis."
+  journal: "Social Psychology of Education"
+  volume: "28"
+  issue: "24"
+  doi: "http://doi.org/10.1007/s11218-024-09955-7"
+  
