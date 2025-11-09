@@ -11,7 +11,7 @@ Check out Dr. Sun's [google scholar](https://scholar.google.com/citations?user=D
 ## Full List of publications
 
 {% for publi in site.data.publist %}
-  {{ publi.authors }} ({{ publi.year }}). {{ publi.title }}. <em>{{ publi.journal }}</em>, <em>{{ publi.volume }}</em>{% if publi.issue %}({{ publi.issue }}){% endif %}{% if publi.pages %}, {{ publi.pages }}{% endif %}. {% if publi.doi %}https://doi.org/{{ publi.doi }}{% else %}<a href="{{ publi.link.url }}">{{ publi.link.display }}</a>{% endif %}
+  {{ publi.authors | replace: "Sun, X.", "<b>Sun, X.</b>" }} ({{ publi.year }}). {{ publi.title }}. <em>{{ publi.journal }}</em>, <em>{{ publi.volume }}</em>{% if publi.issue %}({{ publi.issue }}){% endif %}{% if publi.pages %}, {{ publi.pages }}{% endif %}. {% if publi.doi %}https://doi.org/{{ publi.doi }}{% else %}<a href="{{ publi.link.url }}">{{ publi.link.display }}</a>{% endif %}
   <br /><br />
 {% endfor %}
 
