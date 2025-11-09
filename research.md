@@ -12,7 +12,9 @@ Dr. Sun's research examines the behavioural and neural basis for language and re
 
 <u>Here are some themes and techniques that we currently work on:</u>
 
-**Functional Near Infrared Spectroscopy (fNRIS):**  fNIRS is a non-invasive brain imaging technique that measures brain activity by detecting changes in blood oxygenation. Using near-infrared light, it monitors cortical neural function in real-time, offering a portable, quiet, and motion-tolerant alternative to fMRI—making it ideal for studying brain function in natural settings and diverse populations.
+**Functional Near Infrared Spectroscopy (fNRIS):**  fNIRS is a non-invasive brain imaging technique that measures brain activity by detecting changes in blood oxygenation. Using near-infrared light, it monitors cortical neural function in real-time, offering a portable, quiet, and motion-tolerant alternative to fMRI—making it ideal for studying brain function in natural settings. Participants wear a cap that shines harmless lights onto their scalp. It is particularly ideal for children due to it's non-invasive nature and comfortable fit. 
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/research/fNIRs.jpg" alt="fNIRs Cap" style="width: 65%; max-width: 150px; display: block; margin: 20px auto;">
 
 **Language and Reading Development in Linguistically Diverse Children:** Language and reading development in linguistically diverse children represents a dynamic interplay between cognitive, linguistic, and cultural factors. Young learners often navigate multiple language systems. Their developmental trajectory is shaped by the quality of language exposure, educational support, and the transfer of literacy skills across languages. Understanding these unique pathways is crucial for developing effective educational approaches while supporting academic achievement across all languages in a child's everyday life.
 
