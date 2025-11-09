@@ -5,8 +5,17 @@ excerpt: "Sun Lab -- Publications."
 sitemap: false
 permalink: /publications
 ---
+## Google Scholar 
+Check out Dr. Sun's [google scholar](https://scholar.google.com/citations?user=Deh6LRUAAAAJ&hl=en) for a full list of publications and links. 
 
+## Full List of publications
 
+{% for publi in site.data.publist %}
+  {{ publi.authors }} ({{ publi.year }}). {{ publi.title }}. <em>{{ publi.journal }}</em>, <em>{{ publi.volume }}</em>{% if publi.issue %}({{ publi.issue }}){% endif %}{% if publi.pages %}, {{ publi.pages }}{% endif %}. {% if publi.doi %}https://doi.org/{{ publi.doi }}{% else %}<a href="{{ publi.link.url }}">{{ publi.link.display }}</a>{% endif %}
+  <br /><br />
+{% endfor %}
+
+<!-- original format - AUDREY COMMENTED OUT 09/11/2025 
 # Publications
 
 ## Group highlights
@@ -52,11 +61,6 @@ permalink: /publications
 <p> &nbsp; </p>
 
 
-## Patents
-<em>Milan P Allan, S Gröblacher, RA Norte, M Leeuwenhoek</em><br />Novel atomic force microscopy probes with phononic crystals<br /> PCT/NL20-20/050797 (2020)
-
-<em>Milan P Allan</em><br /> Methods of manufacturing superconductor and phononic elements <br /> <a href="https://patents.google.com/patent/US10439125B2/en?inventor=Milan+ALLAN&oq=inventor:(Milan+ALLAN)">US10439125B2 (2016)</a>
-
 ## Full List of publications
 
 {% for publi in site.data.publist %}
@@ -65,3 +69,4 @@ permalink: /publications
   <em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
 
 {% endfor %}
+-->
