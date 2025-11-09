@@ -13,7 +13,7 @@ Check out Dr. Sun's [google scholar](https://scholar.google.com/citations?user=D
 {% for publi in site.data.publist %}
   {{ publi.authors | replace: "Sun, X.", "<b>Sun, X.</b>" }} ({{ publi.year }}). {{ publi.title }}. <em>{{ publi.journal }}</em>, <em>{{ publi.volume }}</em>{% if publi.issue %}({{ publi.issue }}){% endif %}{% if publi.pages %}, {{ publi.pages }}{% endif %}. {% if publi.doi %}https://doi.org/{{ publi.doi }}{% else %}<a href="{{ publi.link.url }}">{{ publi.link.display }}</a>{% endif %}
   {% if publi.featured %}<br><b>{{ publi.featured }}</b>{% endif %}
-  <br /><br />
+  <br />
 {% endfor %}
 
 <!-- original format - AUDREY COMMENTED OUT 09/11/2025 
