@@ -1,7 +1,7 @@
 ---
 title: "News"
 layout: textlay
-excerpt: "Allan Lab at Leiden University."
+excerpt: "Culture, Language, & Learning Lab at Hong Kong Polytechnic University."
 sitemap: false
 permalink: /allnews.html
 ---
