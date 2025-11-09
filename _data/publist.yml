@@ -10,7 +10,7 @@
   journal: "Social Psychology of Education"
   volume: "28"
   issue: "166"
-  doi: "https://doi.org/10.1007/s11218-025-10125-6"
+  doi: "10.1007/s11218-025-10125-6"
   
 - authors: "Yu, C.L., Eggleston, R., Zhang, K., Nickerson, N., Sun, X., Marks, R.A., Hu, X., Brennan, J., Wellman, H., Kovelman, I. "
   year: "2025" 
@@ -18,13 +18,50 @@
   journal: "Social Cognitive and Affective Neuroscience"
   volume: "20"
   issue: "1"
-  doi: "https://doi.org/10.1093/scan/nsaf022"
+  doi: "10.1093/scan/nsaf022"
 
 - authors: "<u>Wang, Y</u> & Sun, X. +"
   year: "2025" 
-  title: "Growth mindset in Chinese culture: A meta-analysis."
+  title: "Growth mindset in Chinese culture: A meta-analysis"
   journal: "Social Psychology of Education"
   volume: "28"
-  issue: "24"
-  doi: "http://doi.org/10.1007/s11218-024-09955-7"
+  issue: "1"
+  doi: "10.1007/s11218-024-09955-7"
+
+- authors: "Zhang, K., Sun, X., Flores-Gaona, Z., Yu, C.L., Eggleston, R., Nickerson, N., Caruso, Tardif, T., & Kovelman, I."
+  year: "2024" 
+  title: "Cross-linguistic and bilingual transfer effects in contributions of phonology and morphology to word reading: A longitudinal perspective"
+  journal: "Bilingualism: Language and Cognition"
+  volume: "28"
+  issue: "2"
+  doi: "10.1017/S1366728924000439"
+
+- authors: "Eggleston, R., Marks, R.A., Sun, X., Yu, C.L., Zhang, K., Nickerson, N., Caruso, V., Hu, X., & Kovelman, I."
+  year: "2024" 
+  title: "Brain bases of morphological awareness differ between typical readers and children with dyslexia"
+  journal: "Journal of Speech, Language, and Hearing Research"
+  volume: "67"
+  issue: "7"
+  doi: "10.1044/2024_JSLHR-23-00293"
+
+- authors: "Nickerson, N., Sun, X., Caruso, V., Zhang, K., Yu, C.L., Eggleston, R., Chaku, N., Hu, X., Satterfield, T., & Kovelman, I."
+  year: "2024" 
+  title: "What’s in the sound? Common and language-specific patterns in brain activation and functional connectivity for phonological awareness in Spanish-English bilinguals"
+  journal: "Mind, Brain, and Education"
+  volume: "18"
+  issue: "3"
+  doi: "10.1111/mbe.12410"
+
+- authors: "Sun, X., Norton, O., & Nancekivell, S.E."
+  year: "2023" 
+  title: "Beware the myth: Learning styles affect parents', children's, and teachers' thinking about children's academic potential"
+  journal: "npj Science of Learning"
+  volume: "8"
+  issue: "1"
+  doi: "10.1038/s41539-023-00190-x"
+  featured: "Featured in [Forbes](https://www.forbes.com/sites/ulrichboser/2023/12/04/debunking-the-learning-style-neuromyth/?sh=548178f97a6c); Podcast ["Tea for Teaching"](https://www.podbean.com/media/share/pb-imzr4-14fbbd4)"
+
+
+
+
   
