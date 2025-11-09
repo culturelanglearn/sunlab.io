@@ -8,25 +8,23 @@ permalink: /vacancies
 
 # Open positions
 
-**We are currently open for PhD, postdoc, and research assistant applications.  Interested applicants are encouraged to have a background in neuroscience, linguistic, or psychology**
+**We are currently open for PhD, Postdoc, and volunteer research assistant applications.**  
 
-We are  looking for new group members with passion, talent, and grit!
+Interested applicants are encouraged to have a background in one or more of the follow: neuroscience, linguistic, psychology, data science/statistics, computer science. We are  looking for new group members passionate about working with children and studying language development! You will have the chance to work with Dr. Sun to help develop her [research](https://culturelanglearn.github.io/sunlab.io/research/).  
 
-You will have the chance to work.....
+**Applications are on a rolling basis. All interested applicants are encouraged to apply.** 
 
-### Past open positions
+### More information on current open positions
 
-You find the past job openings here:
-[Opening 1]({{ site.baseurl }}/downloads/GeneralPostdoc_2019_v01.pdf),
-[Opening 2]({{ site.baseurl }}/downloads/PPMS_PhD_2019_v01.pdf),
-[Opening 3]({{ site.baseurl }}/downloads/PD.pdf),
-[Opening 4]({{ site.baseurl }}/downloads/PHD1.pdf),
-[Opening 5]({{ site.baseurl }}/downloads/PHD2.pdf).
+[Research Assistant Position]({{ site.baseurl }}/downloads/ra_recruitment.pdf). 
+
+### Applications for PhD and Postdoc positions
+
+Dr. Sun welcomes postdocs under fellowship and scholarship schemes. Please refer to the [HKPFS](https://www.polyu.edu.hk/gs/prospective-students/fellowship-scholarship-schemes/?sc_lang=en) for some potential options. All interested applicants are encouraged to apply. 
 
 ### Applications for  positions
-Interested students are welcome to contact Dr. Sun for PhD and/or research assistant positions at [email](xinsun@polyu.edu.hk). State briefly why you are interested and attach a CV, including information about the grades you had as an undergraduate. No need for a separate cover letter or certificates. **Important**: please insert _"Application PhD"_ or _"Application Postdoc"_ in the subject line. If you are applying to a specific advertisement, note this in your email.
-
+Interested students are welcome to contact Dr. Sun at [culturelanglearn@gmail.com](culturelanglearn@gmail.com). In the email, please include your CV, cover letter, and university transcript(s). **Important**: please insert _"Application PhD"_ or _"Application Postdoc"_ or _"Application RA"_ in the subject line. If you are applying to a specific advertisement, note this in your email.
 
 <figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/Gallery/DSC_0696.jpg" width="95%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.jpeg" width="95%">
 </figure>
