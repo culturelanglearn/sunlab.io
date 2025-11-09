@@ -10,7 +10,7 @@ permalink: /participate/
 
 We are currently recruiting child and adult participants. We are looking for bilingual or monolingual Chinese and English participants. Please contact [culturelanglearn@gmail.com](mailto:culturelanglearn@gmail.com) to sign up to be a participant or for more information! 
 
-<video autoplay muted loop style="width: 80%; max-width: 600px; display: block; margin: 20px auto;">
+<video autoplay muted loop style="width: 80%; max-width: 300px; display: block; margin: 20px auto;">
   <source src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
