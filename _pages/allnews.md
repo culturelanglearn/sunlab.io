@@ -9,7 +9,7 @@ permalink: /allnews.html
 # News
 
 {% for article in site.data.news %}
-<b>{{ article.date }}</b> <br> {{ article.headline }}
+<b>{{ forloop.index }}. {{ article.date }}</b> <br> {{ article.headline }}
 {% endfor %}
 
 <!-- Audrey commented out to remove the <p> marking 09/11/2025
