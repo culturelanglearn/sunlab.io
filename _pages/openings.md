@@ -25,6 +25,3 @@ Dr. Sun welcomes postdocs under fellowship and scholarship schemes. Please refer
 ### Applications for  positions
 Interested students are welcome to contact Dr. Sun at [culturelanglearn@gmail.com](mailto:culturelanglearn@gmail.com). In the email, please include your CV, cover letter, and university transcript(s). **Important**: please insert _"Application PhD"_ or _"Application Postdoc"_ or _"Application RA"_ in the subject line. If you are applying to a specific advertisement, note this in your email.
 
-<figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.jpeg" width="95%">
-</figure>
