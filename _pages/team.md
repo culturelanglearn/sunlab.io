@@ -95,35 +95,35 @@ Jump to [director](#director), [staff](#staff), [master and bachelor students](#
   <i>{{ member.info }}</i>
   <ul style="overflow: hidden">
 
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
+ {% if member.number_educ == 1 %}
+<li> {{ member.education1 | newline_to_br | markdownify }} </li>
+{% endif %}
 
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  {% endif %}
+{% if member.number_educ == 2 %}
+<li> {{ member.education1 | newline_to_br | markdownify }} </li>
+<li> {{ member.education2 | newline_to_br | markdownify }} </li>
+{% endif %}
 
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  <li> {{ member.education3 | markdownify}} </li>
-  {% endif %}
+{% if member.number_educ == 3 %}
+<li> {{ member.education1 | newline_to_br | markdownify }} </li>
+<li> {{ member.education2 | newline_to_br | markdownify }} </li>
+<li> {{ member.education3 | newline_to_br | markdownify }} </li>
+{% endif %}
 
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  <li> {{ member.education3 | markdownify}} </li>
-  <li> {{ member.education4 | markdownify}} </li>
-  {% endif %}
+{% if member.number_educ == 4 %}
+<li> {{ member.education1 | newline_to_br | markdownify }} </li>
+<li> {{ member.education2 | newline_to_br | markdownify }} </li>
+<li> {{ member.education3 | newline_to_br | markdownify }} </li>
+<li> {{ member.education4 | newline_to_br | markdownify }} </li>
+{% endif %}
 
-  {% if member.number_educ == 5 %}
-  <li> {{ member.education1 | markdownify}} </li>
-  <li> {{ member.education2 | markdownify}} </li>
-  <li> {{ member.education3 | markdownify}} </li>
-  <li> {{ member.education4 | markdownify}} </li>
-  <li> {{ member.education5 | markdownify}} </li>
-  {% endif %}
+{% if member.number_educ == 5 %}
+<li> {{ member.education1 | newline_to_br | markdownify }} </li>
+<li> {{ member.education2 | newline_to_br | markdownify }} </li>
+<li> {{ member.education3 | newline_to_br | markdownify }} </li>
+<li> {{ member.education4 | newline_to_br | markdownify }} </li>
+<li> {{ member.education5 | newline_to_br | markdownify }} </li>
+{% endif %}
 
   </ul>
 </div>
@@ -156,27 +156,35 @@ Jump to [director](#director), [staff](#staff), [master and bachelor students](#
   <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i> -->
   <ul style="overflow: hidden">
 
-  {% if member.number_educ == 1 %}
-  <li> {{ member.education1 }} </li>
-  {% endif %}
+ {% if member.number_educ == 1 %}
+<li> {{ member.education1 | newline_to_br | markdownify }} </li>
+{% endif %}
 
-  {% if member.number_educ == 2 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  {% endif %}
+{% if member.number_educ == 2 %}
+<li> {{ member.education1 | newline_to_br | markdownify }} </li>
+<li> {{ member.education2 | newline_to_br | markdownify }} </li>
+{% endif %}
 
-  {% if member.number_educ == 3 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  {% endif %}
+{% if member.number_educ == 3 %}
+<li> {{ member.education1 | newline_to_br | markdownify }} </li>
+<li> {{ member.education2 | newline_to_br | markdownify }} </li>
+<li> {{ member.education3 | newline_to_br | markdownify }} </li>
+{% endif %}
 
-  {% if member.number_educ == 4 %}
-  <li> {{ member.education1 }} </li>
-  <li> {{ member.education2 }} </li>
-  <li> {{ member.education3 }} </li>
-  <li> {{ member.education4 }} </li>
-  {% endif %}
+{% if member.number_educ == 4 %}
+<li> {{ member.education1 | newline_to_br | markdownify }} </li>
+<li> {{ member.education2 | newline_to_br | markdownify }} </li>
+<li> {{ member.education3 | newline_to_br | markdownify }} </li>
+<li> {{ member.education4 | newline_to_br | markdownify }} </li>
+{% endif %}
+
+{% if member.number_educ == 5 %}
+<li> {{ member.education1 | newline_to_br | markdownify }} </li>
+<li> {{ member.education2 | newline_to_br | markdownify }} </li>
+<li> {{ member.education3 | newline_to_br | markdownify }} </li>
+<li> {{ member.education4 | newline_to_br | markdownify }} </li>
+<li> {{ member.education5 | newline_to_br | markdownify }} </li>
+{% endif %}
 
   </ul>
 </div>
