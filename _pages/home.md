@@ -5,7 +5,7 @@ excerpt: "Culture, Language, & Learning Lab at the Hong Kong PolyTechnic Univers
 sitemap: false
 permalink: /
 ---
-<video autoplay muted loop style="width: 80%; max-width: 600px; display: block; margin: 20px auto;">
+<video autoplay muted loop style="width: 80%; max-width: 300px; display: block; margin: 20px auto;">
   <source src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
