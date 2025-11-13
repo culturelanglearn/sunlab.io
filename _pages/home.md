@@ -22,10 +22,9 @@ We have two overarching goals: first,
 **We are looking for passionate new PhD students, Postdocs, Master, and undergraduate students to join the team** [(more info)](https://culturelanglearn.github.io/sunlab.io/vacancies) **!**
 
 
-<figure class="third">
+<figure class="second">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png" style="width: 130px">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png" style="width: 140px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo2.jpeg" style="width: 150px">
 </figure>
 
 
