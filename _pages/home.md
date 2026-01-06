@@ -21,6 +21,8 @@ We have two overarching goals: first,
 
 **We are looking for passionate new PhD students, Postdocs, Master, and undergraduate students to join the team** [(more info)](https://culturelanglearn.github.io/sunlab.io/vacancies) **!**
 
+Follow us on instagram @culturelanglearnlab or [(facebook)](https://www.facebook.com/culturelanglearnlabhk) for updates on study recruitment and our latest research! 
+
 
 <figure class="second">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png" style="width: 130px">
