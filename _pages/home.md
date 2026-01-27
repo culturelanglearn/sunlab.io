@@ -10,14 +10,12 @@ permalink: /
   Your browser does not support the video tag.
 </video>
 
-**News: Our Lab is currently recruiting researchers and participants!** Join us! 
+**News: Our Lab is currently recruiting child participants! Join us for a research journey with fun activities, toys, and cash rewards!** 
 
 We are a research group at [PolyU HK](https://research.polyu.edu.hk/en/) in the Department of [Language and Technology](https://research.polyu.edu.hk/en/organisations/department-of-language-science-and-technology/). Our lab is directed by [Dr. Xin Sun](https://research.polyu.edu.hk/en/persons/xin-sun/), an assistant professor in the department. 
 
-Our research focuses on leveraging psychology, education, and language science to understand the heterogeneity of neurocognitive profiles among children from various linguistic and cultural backgrounds and integrating brain sciences into research and applications to benefit young learners, parents, and educational practitioners.
+Our research uses various methods, including behavioural assessments, surveys, and a child-friendly neuroimaging technique, functional Near-Infrared Spectroscopy, or fNIRS, to examine the brain basis and behavioural patterns for language and reading development in bilingual and monolingual children. A secondary line of our research studies children’s and adults’ intuitive beliefs about the mind, brain, learning, and education. Our lab is committed to leveraging psychology and neuroscience to understand the heterogeneity of the neurocognitive profiles among children from various linguistic and cultural backgrounds. By integrating brain sciences into research and applications, we hope our work can benefit young learners, parents, and educational practitioners.
 
-We have two overarching goals: first, 
-**to understand language development in children**, particularly how monolinguals vs. bilinguals put together words and word-compounds. Second, **to understand how LLM feedback helps with language aquisition** as LLM become more prevalent in today's education society. 
 
 **We are looking for passionate new PhD students, Postdocs, Master, and undergraduate students to join the team** [(more info)](https://culturelanglearn.github.io/sunlab.io/vacancies) **!**
 
