@@ -8,20 +8,23 @@ permalink: /research/
 
 # Research
 
-Dr. Sun's research examines the behavioural and neural basis for language and reading acquisition in bilingual children using various methods, including behavioural assessments, surveys, and functional Near-Infrared Spectroscopy (fNIRS). Another line of her work looks at the role of culture in shaping individuals' intuitive beliefs about learning (i.e., beliefs about intelligence, language learning, and broadly, beliefs about the mind and brain). Dr. Sun’s work has been published in impactful journals, including Journal of Experimental Psychology: General, Child Development, Developmental Science, npj Science of Learning, and Human Brain Mapping. Dr. Sun is committed to leveraging psychology, education, and language science to understand the heterogeneity of neurocognitive profiles among children from various linguistic and cultural backgrounds and integrating brain sciences into research and applications to benefit young learners, parents, and educational practitioners.
+Our group studies language and literacy development. Specifically, we are interested in:
 
-<u>Here are some themes and techniques that we currently work on:</u>
+**Bilingual transfer in the mind and brain:** Our research found that Chinese-English bilingual children developed unique pathways in how language skills support reading. For example, Chinese bilinguals rely more on meaning-based, whereas Spanish bilinguals rely more on sound-based mechanisms to read English words, showing language-specific bilingual impacts (Sun et al., 2022, Child Development). These findings manifested the “invisible hand” of early bilingualism: children flexibly adapt and utilize what they learned from their home language to build their mental representations of English words. 
+
+Bilingualism changes also the developing brain. Using functional Near-Infrared Spectroscopy (fNIRS), we found “bilingual neural transfer” effects that, for bilingual children, better Chinese or Spanish skills were associated with stronger brain activations in the left superior temporal regions when processing English words (Sun et al., 2023 Developmental Science). Chinese or Spanish skills were also associated with the neural density among key regions of language processing when processing English words (Sun et al., 2023, Neurobiology of Language). This work advances our knowledge on the brain mechanisms for language among bilingual children, yielding a better understanding to help children achieve successful bilingual acquisition. The datasets were published as my practice to advocate for open science (Sun et al., 2022, Data in Brief).
+
+**Language in the preschooler brain:** Our recent work (under review) has started to focus on a core developmental period – preschool years – and examined how the brain adapts to experience to acquire key language skills such as morphological awareness (MA), in order to support future reading. We are interested in preschool ages because it is a key transitional period between language and literacy acquisition, and language skills like MA experience rapid development during this time. We will continue looking at how skills gained at preschool years support learning to read, and the brain basis behind them.
+
+**Lexical semantic network development:** As a child, one never learns words in isolation, rather, a child would make semantic connections between words. These associations will lay foundations for building a mature lexical semantic network. We are interested in how children with different linguistic experience across development build associations between words. 
+
+**Beliefs About learning, brain, and education:** Another line of Dr. Sun’s research looks at how individuals think about learning-related constructs. For example, she found that Chinese students were more likely to hold a fixed mindset of intelligence compared to their US peers, and holding a growth mindset does not necessarily translate into better grades (Sun et al., 2021 npj Science of Learning; Wang & Sun, Social Psychology in Education). There were individual differences in people’s beliefs about intelligence and they have differential belief consequences (Sun et al., 2020, JEP: General). Her recent work found developmental evidence that Chinese children grow up becoming less likely to attach performance changes with intelligence changes (Wang & Sun, Child Development, 2026). Besides intelligence, she is also interested in beliefs about language learning, neuromyths, and AI.
+
+<u>Here is the technique we currently work on:</u>
 
 **Functional Near Infrared Spectroscopy (fNIRS):**  fNIRS is a non-invasive brain imaging technique that measures brain activity by detecting changes in blood oxygenation. Using near-infrared light, it monitors cortical neural function in real-time, offering a portable, quiet, and motion-tolerant alternative to fMRI—making it ideal for studying brain function in natural settings. Participants wear a cap that shines harmless lights onto their scalp. It is particularly ideal for children due to its non-invasive nature and comfortable fit. 
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/research/fNIRs.jpg" alt="fNIRs Cap" style="width: 65%; max-width: 150px; display: block; margin: 20px auto;">
 
-**Language and Reading Development in Linguistically Diverse Children:** Language and reading development in linguistically diverse children represents a dynamic interplay between cognitive, linguistic, and cultural factors. Young learners often navigate multiple language systems. Their developmental trajectory is shaped by the quality of language exposure, educational support, and the transfer of literacy skills across languages. Understanding these unique pathways is crucial for developing effective educational approaches while supporting academic achievement across all languages in a child's everyday life.
-
-# Beliefs About Learning 
-The Culture, Language, and Learning Lab believes that learning should be a fun and engaging process for both children and researchers. We strive to create a supportive and welcoming learning environment for everyone, and we hope that by doing so we are able to work together towards advancing our research on child linguistic development. 
-
-
-![]({{ site.url }}{{ site.baseurl }}/images/brain_weight.jpg){: style="width: 70%; float: center; margin: 0px"}
 
 <!-- ### ... and more. --> 
