@@ -39,9 +39,6 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
   </h4>
   
   <i>{{ member.info }}</i>
-  {% if member.email %}
-    <br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
-  {% endif %}
   
   <ul style="overflow: hidden; padding-left: 20px;">
 
@@ -95,9 +92,6 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
   </h4>
   
   <i>{{ member.info }}</i>
-  {% if member.email %}
-    <br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
-  {% endif %}
   
   <ul style="overflow: hidden; padding-left: 20px;">
 
@@ -151,10 +145,7 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
   </h4>
   
   <i>{{ member.info }}</i>
-  {% if member.email %}
-    <br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
-  {% endif %}
-  
+
   <ul style="overflow: hidden; padding-left: 20px;">
 
   {% for i in (1..member.number_educ) %}
