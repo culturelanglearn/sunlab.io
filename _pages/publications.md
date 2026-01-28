@@ -20,7 +20,6 @@ Check out Dr. Sun's [google scholar](https://scholar.google.com/citations?user=D
 Huo, M., Sun, X., Kovelman, I., & Chen, B. (2023). Literacy development in Southeast Asia. In Verhoeven (Ed.), Variation in Literacy Development. Cambridge, UK: Cambridge University Press https://doi.org/10.1017/9781009242585
 
 Michal, A., Fansher, M., Sun, X., Zhang, H., & Shah, P. (2018). Cognitive development. The Oxford Handbook of Educational Psychology. Oxford, UK: Oxford University Press https://doi.org/10.1093/oxfordhb/9780199841332.013.7
-<img width="468" height="128" alt="image" src="https://github.com/user-attachments/assets/8595393e-2e69-49f5-be26-559aa4272d48" />
 
 
 ## Public outreach & Non-academic Publications
@@ -40,8 +39,6 @@ Sun, X. (2021). Debunking the myth of learning styles: A case for evidence-based
 (Magazine of the Society for Technical Communication). 68(5), 31-33. 
 
 Sun, X. (2010). Dream [in Chinese]. Journal of Poetry (诗刊). 24, 77. 
-<img width="468" height="455" alt="image" src="https://github.com/user-attachments/assets/d6bd03c9-c86d-4a18-85da-3f450851a67f" />
-
 
 <!-- original format - AUDREY COMMENTED OUT 09/11/2025 
 # Publications
