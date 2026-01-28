@@ -8,12 +8,12 @@ permalink: /team/
 
 # Group Members
 
- **We are  looking for new PhD students, Postdocs, and Master students to join the team** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
+ **We are looking for new PhD students, Postdocs, and Master students to join the team** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
 
+Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-research-fellows), [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors).
 
-Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-research-fellows), [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors).
-
-## [Director]
+<a id="director"></a>
+## Director
 {% assign number_printed = 0 %}
 {% for member in site.data.director %}
 
@@ -27,45 +27,31 @@ Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-re
   <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" 
        class="img-responsive" 
        style="width: 150px; height: 150px; object-fit: cover; float: left; margin-right: 15px;" />
-   <!-- Add hyperlink to name -->
+  <!-- Add hyperlink to name - with fallback if website doesn't exist -->
   <h4>
-    <a href="{{ member.website }}" target="_blank">
+    {% if member.website %}
+      <a href="{{ member.website }}" target="_blank">
+        {{ member.name }}
+      </a>
+    {% else %}
       {{ member.name }}
-    </a>
+    {% endif %}
   </h4>
   
   <i>{{ member.info }}</i>
-  <ul style="overflow: hidden">
+  {% if member.email %}
+    <br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
+  {% endif %}
+  
+  <ul style="overflow: hidden; padding-left: 20px;">
 
-{% if member.number_educ == 1 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 2 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 3 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 4 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-<li> {{ member.education4 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 5 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-<li> {{ member.education4 | newline_to_br | markdownify }} </li>
-<li> {{ member.education5 | newline_to_br | markdownify }} </li>
-{% endif %}
+  <!-- Use a loop for education to simplify -->
+  {% for i in (1..member.number_educ) %}
+    {% assign education_key = 'education' | append: i %}
+    {% if member[education_key] %}
+      <li>{{ member[education_key] | newline_to_br | markdownify }}</li>
+    {% endif %}
+  {% endfor %}
 
   </ul>
 </div>
@@ -83,6 +69,7 @@ Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-re
 </div>
 {% endif %}
 
+<a id="postdoctoral-research-fellows"></a>
 ## Postdoctoral Research Fellows
 {% assign number_printed = 0 %}
 {% for member in site.data.postdocs %}
@@ -97,43 +84,29 @@ Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-re
   <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" 
        class="img-responsive" 
        style="width: 150px; height: 150px; object-fit: cover; float: left; margin-right: 15px;" />
-<h4>
-    <a href="{{ member.website }}" target="_blank">
+  <h4>
+    {% if member.website %}
+      <a href="{{ member.website }}" target="_blank">
+        {{ member.name }}
+      </a>
+    {% else %}
       {{ member.name }}
-    </a>
+    {% endif %}
   </h4>
+  
   <i>{{ member.info }}</i>
-  <ul style="overflow: hidden">
+  {% if member.email %}
+    <br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
+  {% endif %}
+  
+  <ul style="overflow: hidden; padding-left: 20px;">
 
- {% if member.number_educ == 1 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 2 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 3 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 4 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-<li> {{ member.education4 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 5 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-<li> {{ member.education4 | newline_to_br | markdownify }} </li>
-<li> {{ member.education5 | newline_to_br | markdownify }} </li>
-{% endif %}
+  {% for i in (1..member.number_educ) %}
+    {% assign education_key = 'education' | append: i %}
+    {% if member[education_key] %}
+      <li>{{ member[education_key] | newline_to_br | markdownify }}</li>
+    {% endif %}
+  {% endfor %}
 
   </ul>
 </div>
@@ -151,6 +124,7 @@ Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-re
 </div>
 {% endif %}
 
+<a id="staff"></a>
 ## Staff
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
@@ -165,39 +139,30 @@ Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-re
   <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" 
        class="img-responsive" 
        style="width: 150px; height: 150px; object-fit: cover; float: left; margin-right: 15px;" />
-  <h4>{{ member.name }}</h4>
+  
+  <h4>
+    {% if member.website %}
+      <a href="{{ member.website }}" target="_blank">
+        {{ member.name }}
+      </a>
+    {% else %}
+      {{ member.name }}
+    {% endif %}
+  </h4>
+  
   <i>{{ member.info }}</i>
-  <ul style="overflow: hidden">
+  {% if member.email %}
+    <br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
+  {% endif %}
+  
+  <ul style="overflow: hidden; padding-left: 20px;">
 
- {% if member.number_educ == 1 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 2 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 3 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 4 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-<li> {{ member.education4 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 5 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-<li> {{ member.education4 | newline_to_br | markdownify }} </li>
-<li> {{ member.education5 | newline_to_br | markdownify }} </li>
-{% endif %}
+  {% for i in (1..member.number_educ) %}
+    {% assign education_key = 'education' | append: i %}
+    {% if member[education_key] %}
+      <li>{{ member[education_key] | newline_to_br | markdownify }}</li>
+    {% endif %}
+  {% endfor %}
 
   </ul>
 </div>
@@ -215,6 +180,7 @@ Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-re
 </div>
 {% endif %}
 
+<a id="master-and-bachelor-students"></a>
 ## Master and Bachelor Students
 {% assign number_printed = 0 %}
 {% for member in site.data.students %}
@@ -226,39 +192,35 @@ Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-re
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i> -->
-  <ul style="overflow: hidden">
+  {% if member.photo %}
+    <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" 
+         class="img-responsive" 
+         style="width: 150px; height: 150px; object-fit: cover; float: left; margin-right: 15px;" />
+  {% endif %}
+  
+  <h4>
+    {% if member.website %}
+      <a href="{{ member.website }}" target="_blank">
+        {{ member.name }}
+      </a>
+    {% else %}
+      {{ member.name }}
+    {% endif %}
+  </h4>
+  
+  <i>{{ member.info }}</i>
+  {% if member.email %}
+    <br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
+  {% endif %}
+  
+  <ul style="overflow: hidden; padding-left: 20px;">
 
- {% if member.number_educ == 1 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 2 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 3 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 4 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-<li> {{ member.education4 | newline_to_br | markdownify }} </li>
-{% endif %}
-
-{% if member.number_educ == 5 %}
-<li> {{ member.education1 | newline_to_br | markdownify }} </li>
-<li> {{ member.education2 | newline_to_br | markdownify }} </li>
-<li> {{ member.education3 | newline_to_br | markdownify }} </li>
-<li> {{ member.education4 | newline_to_br | markdownify }} </li>
-<li> {{ member.education5 | newline_to_br | markdownify }} </li>
-{% endif %}
+  {% for i in (1..member.number_educ) %}
+    {% assign education_key = 'education' | append: i %}
+    {% if member[education_key] %}
+      <li>{{ member[education_key] | newline_to_br | markdownify }}</li>
+    {% endif %}
+  {% endfor %}
 
   </ul>
 </div>
@@ -276,7 +238,7 @@ Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-re
 </div>
 {% endif %}
 
-
+<a id="alumni"></a>
 ## Alumni
 
 {% assign number_printed = 0 %}
@@ -289,9 +251,27 @@ Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-re
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4>{{ member.name }}</h4>
+  {% if member.photo %}
+    <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" 
+         class="img-responsive" 
+         style="width: 150px; height: 150px; object-fit: cover; float: left; margin-right: 15px;" />
+  {% endif %}
+  
+  <h4>
+    {% if member.website %}
+      <a href="{{ member.website }}" target="_blank">
+        {{ member.name }}
+      </a>
+    {% else %}
+      {{ member.name }}
+    {% endif %}
+  </h4>
+  
   <i>{{ member.duration }} <br> Role: {{ member.info }}</i>
+  {% if member.email %}
+    <br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
+  {% endif %}
+  
   <ul style="overflow: hidden">
 
   </ul>
@@ -310,41 +290,33 @@ Jump to [director](#director), [postdoctoral research fellows] (#postdoctoral-re
 </div>
 {% endif %}
 
+<a id="lab-visitors"></a>
 ## Former visitors, BSc/ MSc students
 <div class="row">
 
 <div class="col-sm-4 clearfix">
 <h4>Visitors</h4>
 {% for member in site.data.alumni_visitors %}
-{{ member.name }}
+{{ member.name }}<br>
 {% endfor %}
 </div>
 
 <div class="col-sm-4 clearfix">
 <h4>Master students</h4>
 {% for member in site.data.alumni_msc %}
-{{ member.name }}
+{{ member.name }}<br>
 {% endfor %}
 </div>
 
 <div class="col-sm-4 clearfix">
 <h4>Bachelor Students</h4>
 {% for member in site.data.alumni_bsc %}
-{{ member.name }}
+{{ member.name }}<br>
 {% endfor %}
 </div>
 
 </div>
 
-<!-- this original code - Audrey changed 04/11/2025
-<div class="col-sm-6 clearfix">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" class="img-responsive" width="25%" style="float: left" />
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!--<br>email: <{{ member.email }}></i> 
-  <ul style="overflow: hidden">
--->
-
-
-
+<a id="administrative-support"></a>
 ## Administrative Support
 <a href="mailto:culturelanglearn">Audrey Chang</a> is helping us (and other groups) with administration.
