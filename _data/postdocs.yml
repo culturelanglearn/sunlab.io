@@ -1,11 +1,5 @@
-- name: [Dr. Xin Sun] ({{site.url}}{{site.baseurl}}/director)
-  photo: Xin_profile.jpeg
-  info: Assistant Professor/Principle Investigator 
-  email: xinsun@polyu.edu.hk 
-  number_educ: 3
-  education1: |
-    Beijing Normal University, BSc Psychology 
-  education2: |
-    University of Michigan, PhD Education and Psychology, Ann Arbor 
-  education3: |
-    University of British Columbia, Banting Postdoctoral Fellow, Psychology 
+- name: [My Nguyen] (https://blclab.org/my-nguyen/)
+  photo: MyNguyen.jpg
+  info: Postdoctoral Research Fellow
+  email: my-vh.nguyen@polyu.edu.hk
+ 
