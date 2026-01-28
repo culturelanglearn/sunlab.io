@@ -22,10 +22,15 @@ Contact: my-vh.nguyen@polyu.edu.hk
 (* = co-first authored)
 
 <b>Nguyen, M. V. H.</b>, Xu, Y., Vaughn, K. A., & Hernandez, A. E. (2024). Subcortical volume and language experience in bilingual and monolingual adolescents: An ABCD study. Developmental Cognitive Neuroscience, 65, 101334. https://doi.org/10.1016/j.dcn.2023.101334
+
 *Xu, Y., *<b>Nguyen, M. V. H.</b>, Vaughn, K. A., Archila‐Suerte, P., & Hernandez, A. E. (2024). Subcortical volume and language proficiency in bilinguals and monolinguals: A structural MRI study. Brain and Language, 259, 105494. https://doi.org/10.1016/j.bandl.2024.105494
+
 <b>Nguyen, M. V. H.</b>, Vaughn, K. A., Claussenius-Kalman, H., Archila-Suerte, P., & Hernandez, A. E. (2023). Cortical thickness is related to variability in heritage bilingual language proficiency. Translational Issues in Psychological Science, 9(4), 364–379. https://doi.org/10.1037/tps0000362
+
 <b>Nguyen, M. V. H.</b>, Hutchison, L., Norvell, G., Mead, D., & Winsler, A. (2023). Degree of bilingualism and executive function in early childhood. Language and Cognition, 16(3), 536 – 558. https://doi.org/10.1017/langcog.2023.46
+
 Vaughn, K. A., <b>Nguyen, M. V. H.</b>, Ronderos, J., Hernandez, A. E. (2021). Cortical thickness in bilingual and monolingual children: Relationships to language use and language skill. NeuroImage, 243, 118560. https://doi.org/10.1016/j.neuroimage.2021.118560
+
 <b>Nguyen, M. V. H.</b>, & Winsler, A. (2021). Early bilingualism predicts enhanced later foreign language learning in secondary school. Developmental Psychology, 57(11), 1926–1942. https://doi.org/10.1037/dev0001248
 
 <figure class="third">
