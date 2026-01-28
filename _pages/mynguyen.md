@@ -15,7 +15,7 @@ permalink: /postdoc1/
 
 My received her Ph.D. in Developmental, Cognitive, & Behavioral Neuroscience at the University of Houston. My's research examines how bilingual experience shapes cognition, education, and the brain from an interdisciplinary developmental neuroscience perspective. In previous work, My used structural MRI to investigate how language background—including age of acquisition, cortical thickness, and subcortical volume—differs between monolinguals, bilingual young adults, and adolescents, and My has also explored the long-term educational outcomes of bilingualism. More recently, My's focus has shifted to behavioral studies of cognitive processing under emotional interference, revealing that both task type and language background strongly influence performance. Looking ahead, My aims to integrate these approaches by using fMRI to track how the brain supports real-time interactions between cognition and emotion in bilinguals. My is particularly interested in studying these processes in more naturalistic, ecologically valid scenarios and in fostering interdisciplinary collaborations that link neuroscience, psychology, and education to better understand how bilingualism shapes learning and development.
 
-Contact: my-vh.nguyen@polyu.edu.hk
+Contact: [my-vh.nguyen@polyu.edu.hk](mailto:my-vh.nguyen@polyu.edu.hk)
 
 **Publications**
 
