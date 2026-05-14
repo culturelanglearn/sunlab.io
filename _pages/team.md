@@ -118,6 +118,58 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
 </div>
 {% endif %}
 
+<a id="postdoctoral-research-fellows"></a>
+## Incoming PhD Students
+{% assign number_printed = 0 %}
+{% for member in site.data.phd_students %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+
+{% if even_odd == 0 %}
+<div class="row">
+{% endif %}
+
+<div class="col-sm-6 clearfix">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.photo }}" 
+       class="img-responsive" 
+       style="width: 150px; height: 150px; object-fit: cover; float: left; margin-right: 15px;" />
+  <h4>
+    {% if member.website %}
+      <a href="{{ member.website }}" target="_blank">
+        {{ member.name }}
+      </a>
+    {% else %}
+      {{ member.name }}
+    {% endif %}
+  </h4>
+  
+  <i>{{ member.info }}</i>
+  
+  <ul style="overflow: hidden; padding-left: 20px;">
+
+  {% for i in (1..member.number_educ) %}
+    {% assign education_key = 'education' | append: i %}
+    {% if member[education_key] %}
+      <li>{{ member[education_key] | newline_to_br | markdownify }}</li>
+    {% endif %}
+  {% endfor %}
+
+  </ul>
+</div>
+
+{% assign number_printed = number_printed | plus: 1 %}
+
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
+{% endfor %}
+
+{% assign even_odd = number_printed | modulo: 2 %}
+{% if even_odd == 1 %}
+</div>
+{% endif %}
+
 <a id="staff"></a>
 ## Staff
 {% assign number_printed = 0 %}
