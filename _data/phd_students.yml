@@ -1,1 +1,26 @@
+- name: Jiameng Liu
+  photo: jiameng.png
+  info: PhD Student
+  number_educ: 2
+  education1: |
+    Tsinghua University, BSc Psychology 
+  education2: |
+    Tsinghua University, M.S. in Psychology
 
+- name: Yuhan Ge
+  photo: yuhan.png
+  info: PhD Student
+  number_educ: 2
+  education1: |
+   Northwest Agriculture and Forestry University, BA English 
+  education2: |
+    HKUST, M.A. in International Language Education
+
+- name: Yixiao Yang
+  photo: yixiao.png
+  info: PhD Student
+  number_educ: 2
+  education1: |
+   Ocean University of China, BSc Mathematics and Applied Mathematics 
+  education2: |
+    CUHK, M.S. in Advanced Studies in Statistics and Data Science
