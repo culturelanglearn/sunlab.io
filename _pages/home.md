@@ -5,10 +5,20 @@ excerpt: "Culture, Language, & Learning Lab at the Hong Kong PolyTechnic Univers
 sitemap: false
 permalink: /
 ---
-<video autoplay muted loop style="width: 80%; max-width: 300px; display: block; margin: 20px auto;">
-  <source src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+<div style="text-align: center; margin: 20px auto;">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/EU5mK4ut8lU" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen 
+    style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </iframe>
+</div>
 
 **News: Our Lab is currently recruiting child participants! Sign up [here](https://polyu.qualtrics.com/jfe/form/SV_0emO9s8LTRy9jEy) to join us for a research journey with fun activities, toys, and cash rewards!** 
 
@@ -21,6 +31,10 @@ Our research uses various methods, including behavioural assessments, surveys, a
 
 Follow us on instagram @culturelanglearnlab or [(facebook)](https://www.facebook.com/culturelanglearnlabhk) for updates on study recruitment and our latest research! 
 
+<video autoplay muted loop style="width: 80%; max-width: 100px; display: block; margin: 20px auto;">
+  <source src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <figure class="second">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png" style="width: 130px">
