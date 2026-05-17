@@ -1,37 +1,50 @@
 ---
 layout: default
 ---
+---
+layout: default
+---
 
 <div class="row">
-  <!-- NEW CODE: Full width title and News on top -->
   <div class="col-sm-12">
     <h1>Welcome to the <br>Culture, Language & Learning Lab</h1>
     
-    <div id="newsid" style="margin-bottom: 30px;">
+    <!-- This puts the news at the top -->
+    <div id="newsid_top" style="margin-bottom: 30px;">
       <hr>
       <h3>Latest News</h3>
       
-      <!-- Logic to show only the 3 most recent news items -->
-      <table class="table table-sm table-borderless">
-        {% for item in site.data.news limit: 3 %}
-          <tr>
-            <th scope="row" style="width: 20%; min-width: 100px;">{{ item.date }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | markdownify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
-
+      {% if site.news %}
+        <table class="table table-sm table-borderless">
+          {% assign news_sorted = site.news | reverse %}
+          {% for item in news_sorted limit: 3 %}
+            <tr>
+              <th scope="row" style="width: 20%;">{{ item.date | date: "%b %-d, %Y" }}</th>
+              <td>
+                {{ item.content | remove: '<p>' | remove: '</p>' }}
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+      {% else %}
+        {% include news.html %}
+      {% endif %}
+      
       <hr>
     </div>
 
+    <!-- This is your Video and Main Text from the .md file -->
     {{ content }}
   </div>
+</div>
+
+<style>
+  /* This hides the sidebar news if your theme is forcing it at the bottom */
+  #newsid {
+    display: none !important;
+  }
+</style>
+
 
 <!-- ORIGINAL CODE COMMENTED OUT BELOW
   <div id="homeid" class="col-sm-8">
