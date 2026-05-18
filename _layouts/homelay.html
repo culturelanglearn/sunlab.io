@@ -5,43 +5,47 @@ layout: default
 <div class="row">
   <div class="col-sm-12">
     <h1>Welcome to the <br>Culture, Language & Learning Lab</h1>
-    
-    <!-- This puts the news at the top -->
-    <div id="newsid_top" style="margin-bottom: 30px;">
+
+    <!-- 1. The Video and Intro (from your index.md file) -->
+    {{ content }}
+
+    <!-- 2. The News Section (placed after the content/video) -->
+    <div id="newsid_middle" style="margin-top: 30px; margin-bottom: 30px;">
       <hr>
       <h3>Latest News</h3>
       
-      {% if site.news %}
+      <!-- This pulls your news list but limits it to 3 items -->
+      {% if site.data.news %}
         <table class="table table-sm table-borderless">
-          {% assign news_sorted = site.news | reverse %}
-          {% for item in news_sorted limit: 3 %}
+          {% for item in site.data.news limit: 3 %}
             <tr>
-              <th scope="row" style="width: 20%;">{{ item.date | date: "%b %-d, %Y" }}</th>
-              <td>
-                {{ item.content | remove: '<p>' | remove: '</p>' }}
+              <th scope="row" style="width: 20%; min-width: 100px; vertical-align: top;">{{ item.date }}</th>
+              <td style="vertical-align: top;">
+                {% if item.inline %}
+                  {{ item.content | markdownify }}
+                {% else %}
+                  <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                {% endif %}
               </td>
             </tr>
           {% endfor %}
         </table>
       {% else %}
+        <!-- Fallback if the data loop doesn't work for your specific theme -->
         {% include news.html %}
       {% endif %}
-      
       <hr>
     </div>
 
-    <!-- This is your Video and Main Text from the .md file -->
-    {{ content }}
   </div>
 </div>
 
 <style>
-  /* This hides the sidebar news if your theme is forcing it at the bottom */
+  /* This hides the original sidebar news column so it doesn't appear at the bottom */
   #newsid {
     display: none !important;
   }
 </style>
-
 
 <!-- ORIGINAL CODE COMMENTED OUT BELOW
   <div id="homeid" class="col-sm-8">
