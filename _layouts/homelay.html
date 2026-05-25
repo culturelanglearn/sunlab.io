@@ -13,24 +13,23 @@ layout: default
       
       {% if site.data.news %}
         <table class="table table-sm table-borderless">
-          {% comment %} Sort by date and reverse ensures the 3 most recent dates are shown {% endcomment %}
           {% assign news_sorted = site.data.news | sort: "date" | reverse %}
           {% for item in news_sorted limit: 3 %}
             <tr>
               <th scope="row" style="width: 20%;">{{ item.date | date: "%b %-d, %Y" }}</th>
               <td>
-                {% if item.url %}
-                  <a href="{{ item.url | relative_url }}">{{ item.announcement | remove: '<p>' | remove: '</p>' }}</a>
-                {% else %}
+                {% if item.inline %}
                   {{ item.announcement | remove: '<p>' | remove: '</p>' }}
+                {% else %}
+                  <a href="{{ item.url | relative_url }}">{{ item.announcement | remove: '<p>' | remove: '</p>' }}</a>
                 {% endif %}
               </td>
             </tr>
           {% endfor %}
         </table>
         
-        <!-- Added the link to the full news page here -->
-        <p><a href="{{ '/news/' | relative_url }}" class="btn btn-outline-primary btn-sm">More News...</a></p>
+        <!-- Link to see all news -->
+        <p><a href="{{ site.baseurl }}/news/" class="btn btn-outline-primary btn-sm">More News...</a></p>
         
       {% else %}
         {% include news.html %}
