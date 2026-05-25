@@ -13,29 +13,24 @@ layout: default
       
       {% if site.data.news %}
         <table class="table table-sm table-borderless">
-          {% comment %} Takes the first 3 items from your news.yml file {% endcomment %}
-          {% for item in site.data.news limit: 3 %}
+          {% comment %} Sort by date and reverse ensures the 3 most recent dates are shown {% endcomment %}
+          {% assign news_sorted = site.data.news | sort: "date" | reverse %}
+          {% for item in news_sorted limit: 3 %}
             <tr>
-              <th scope="row" style="width: 20%; vertical-align: top;">
-                {{ item.date | date: "%b %-d, %Y" }}
-              </th>
-              <td style="vertical-align: top;">
-                {% if item.inline %}
-                  {{ item.announcement | markdownify | remove: '<p>' | remove: '</p>' }}
+              <th scope="row" style="width: 20%;">{{ item.date | date: "%b %-d, %Y" }}</th>
+              <td>
+                {% if item.url %}
+                  <a href="{{ item.url | relative_url }}">{{ item.announcement | remove: '<p>' | remove: '</p>' }}</a>
                 {% else %}
-                  <a href="{{ item.url | relative_url }}" style="font-weight: bold;">
-                    {{ item.announcement | markdownify | remove: '<p>' | remove: '</p>' }}
-                  </a>
+                  {{ item.announcement | remove: '<p>' | remove: '</p>' }}
                 {% endif %}
               </td>
             </tr>
           {% endfor %}
         </table>
         
-        <!-- Link to the full news page -->
-        <p style="margin-top: 10px;">
-          <a href="{{ '/news/' | relative_url }}" class="btn btn-outline-primary btn-sm">More News...</a>
-        </p>
+        <!-- Added the link to the full news page here -->
+        <p><a href="{{ '/news/' | relative_url }}" class="btn btn-outline-primary btn-sm">More News...</a></p>
         
       {% else %}
         {% include news.html %}
