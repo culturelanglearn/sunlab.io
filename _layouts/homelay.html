@@ -4,26 +4,26 @@ layout: default
 
 <div class="row">
   <div class="col-sm-12">
-    <!-- 1. The Video and Intro -->
-    <div class="main-intro-content">
-      {{ content }}
-    </div>
-
-    <!-- 2. The News Section (Placed directly after video content) -->
-    <div id="news-section-main" style="margin-top: 40px; margin-bottom: 40px; clear: both;">
+    
+    <!-- 1. The News Section (Now placed at the top) -->
+    <div id="news-section-main" style="margin-bottom: 40px; clear: both;">
       <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px; color: #333;">Latest News</h3>
       
       {% if site.data.news %}
         <div class="table-responsive">
           <table class="table table-sm table-borderless">
-            {% for item in site.data.news limit: 3 %}
+            {% comment %} 
+               We reverse the news list to put the newest entries at the top, 
+               then limit to 3.
+            {% endcomment %}
+            {% assign sorted_news = site.data.news | reverse %}
+            {% for item in sorted_news limit: 3 %}
               <tr>
                 <th scope="row" style="width: 150px; vertical-align: top; color: #666; font-weight: normal;">
                   {{ item.date | date: "%b %-d, %Y" }}
                 </th>
                 <td style="vertical-align: top;">
                   {% if item.inline %}
-                    <!-- Show Title first, then the content -->
                     <div class="news-content-block">
                       {% if item.title %}
                         <strong style="color: #000; display: block; margin-bottom: 5px;">{{ item.title }}</strong>
@@ -31,7 +31,6 @@ layout: default
                       <div style="color: #444;">{{ item.content | markdownify }}</div>
                     </div>
                   {% else %}
-                    <!-- If it's a link, show the title as a clickable link -->
                     <a href="{{ item.url | relative_url }}" style="font-weight: bold; color: #0056b3; text-decoration: underline;">
                       {{ item.title }}
                     </a>
@@ -45,16 +44,21 @@ layout: default
           </table>
         </div>
         
-        <!-- Optional: Link to see all news if you have a news page -->
         <p><a href="{{ '/news/' | relative_url }}" class="btn btn-outline-primary btn-sm">More News...</a></p>
       {% endif %}
     </div>
+
     <hr>
+
+    <!-- 2. The Video and Intro (Now placed after news) -->
+    <div class="main-intro-content">
+      {{ content }}
+    </div>
+
   </div>
 </div>
 
 <style>
-  /* 1. Ensure the news text is forced to be visible (not white on white) */
   #news-section-main td, 
   #news-section-main th {
     color: #333 !important;
@@ -62,15 +66,14 @@ layout: default
     line-height: 1.5;
   }
 
-  /* 2. Fix potential layout shifts from the video */
   .main-intro-content video {
     width: 100%;
     max-height: 500px;
     object-fit: cover;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 
-  /* 3. Hide the original sidebar news so it doesn't duplicate at the bottom */
   #newsid, .news-sidebar {
     display: none !important;
   }
