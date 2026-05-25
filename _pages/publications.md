@@ -9,7 +9,7 @@ permalink: /publications
 Check out Dr. Sun's [google scholar](https://scholar.google.com/citations?user=Deh6LRUAAAAJ&hl=en) for a full list of publications and links. 
 
 ## Full List of Journal Publications
-+ = corresponding author ; ____ = student mentee 
+'+' = corresponding author ; ____ = student mentee 
 
 {% for publi in site.data.publist %}
   <strong>{{ forloop.index }}.</strong> 
