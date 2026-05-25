@@ -5,8 +5,13 @@ layout: default
 <div class="row">
   <div class="col-sm-12">
     <h1>Welcome to the <br>Culture, Language & Learning Lab</h1>
-    
-    <!-- This puts the news at the top -->
+
+    <!-- This is your Video and Main Text from the .md file -->
+    {{ content }}
+  </div>
+</div>
+
+ <!-- This puts the news at the top -->
     <div id="newsid_top" style="margin-bottom: 30px;">
       <hr>
       <h3>Latest News</h3>
@@ -29,11 +34,6 @@ layout: default
       
       <hr>
     </div>
-
-    <!-- This is your Video and Main Text from the .md file -->
-    {{ content }}
-  </div>
-</div>
 
 <style>
   /* This hides the sidebar news if your theme is forcing it at the bottom */
