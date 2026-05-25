@@ -11,14 +11,17 @@ layout: default
       <hr>
       <h3>Latest News</h3>
       
-      {% if site.news %}
+      {% if site.data.news %}
         <table class="table table-sm table-borderless">
-          {% assign news_sorted = site.news | reverse %}
-          {% for item in news_sorted limit: 3 %}
+          {% for item in site.data.news limit: 3 %}
             <tr>
               <th scope="row" style="width: 20%;">{{ item.date | date: "%b %-d, %Y" }}</th>
               <td>
-                {{ item.content | remove: '<p>' | remove: '</p>' }}
+                {% if item.inline %}
+                  {{ item.announcement | remove: '<p>' | remove: '</p>' }}
+                {% else %}
+                  <a href="{{ item.url | relative_url }}">{{ item.announcement }}</a>
+                {% endif %}
               </td>
             </tr>
           {% endfor %}
