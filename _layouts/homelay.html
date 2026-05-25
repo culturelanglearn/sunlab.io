@@ -5,7 +5,7 @@ layout: default
 <div class="row">
   <div class="col-sm-12">
     
-    <!-- 1. The News Section (Now placed at the top) -->
+    <!-- 1. The News Section (Now at the top) -->
     <div id="news-section-main" style="margin-bottom: 40px; clear: both;">
       <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px; color: #333;">Latest News</h3>
       
@@ -13,31 +13,30 @@ layout: default
         <div class="table-responsive">
           <table class="table table-sm table-borderless">
             {% comment %} 
-               We reverse the news list to put the newest entries at the top, 
-               then limit to 3.
+               Sort by date, reverse so newest is first, and limit to top 3 
             {% endcomment %}
-            {% assign sorted_news = site.data.news | reverse %}
+            {% assign sorted_news = site.data.news | sort: "date" | reverse %}
             {% for item in sorted_news limit: 3 %}
               <tr>
                 <th scope="row" style="width: 150px; vertical-align: top; color: #666; font-weight: normal;">
                   {{ item.date | date: "%b %-d, %Y" }}
                 </th>
                 <td style="vertical-align: top;">
-                  {% if item.inline %}
-                    <div class="news-content-block">
+                  <div class="news-content-block">
+                    {% if item.inline %}
                       {% if item.title %}
                         <strong style="color: #000; display: block; margin-bottom: 5px;">{{ item.title }}</strong>
                       {% endif %}
                       <div style="color: #444;">{{ item.content | markdownify }}</div>
-                    </div>
-                  {% else %}
-                    <a href="{{ item.url | relative_url }}" style="font-weight: bold; color: #0056b3; text-decoration: underline;">
-                      {{ item.title }}
-                    </a>
-                    {% if item.content %}
-                      <div style="color: #444; margin-top: 5px;">{{ item.content | markdownify }}</div>
+                    {% else %}
+                      <a href="{{ item.url | relative_url }}" style="font-weight: bold; color: #0056b3; text-decoration: underline;">
+                        {{ item.title }}
+                      </a>
+                      {% if item.content %}
+                        <div style="color: #444; margin-top: 5px;">{{ item.content | markdownify }}</div>
+                      {% endif %}
                     {% endif %}
-                  {% endif %}
+                  </div>
                 </td>
               </tr>
             {% endfor %}
@@ -48,9 +47,9 @@ layout: default
       {% endif %}
     </div>
 
-    <hr>
+    <hr style="margin-bottom: 40px;">
 
-    <!-- 2. The Video and Intro (Now placed after news) -->
+    <!-- 2. The Video and Intro (Content from your index.md) -->
     <div class="main-intro-content">
       {{ content }}
     </div>
@@ -59,6 +58,7 @@ layout: default
 </div>
 
 <style>
+  /* Styling to ensure visibility and clean layout */
   #news-section-main td, 
   #news-section-main th {
     color: #333 !important;
@@ -70,23 +70,11 @@ layout: default
     width: 100%;
     max-height: 500px;
     object-fit: cover;
-    margin-top: 20px;
     margin-bottom: 20px;
   }
 
+  /* Prevent duplication if your default layout has a news sidebar */
   #newsid, .news-sidebar {
     display: none !important;
   }
 </style>
-
-<!-- ORIGINAL CODE COMMENTED OUT BELOW
-  <div id="homeid" class="col-sm-8">
-        <h1>Welcome to the <br>Culture, Language & Learning Lab</h1>
-
-	{{ content }}
-  </div>
-  <div id="newsid" class="col-sm-4" >
-	{% include news.html %}
-  </div>
---> 
-</div>
