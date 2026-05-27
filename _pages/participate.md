@@ -29,6 +29,34 @@ We are currently recruiting child and adult participants. We are looking for bil
   </iframe>
 </div>
 
+<div style="text-align: center; margin: 20px auto;">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/Kfpzrj6Zc1E" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen 
+    style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </iframe>
+</div>
+
+<div style="text-align: center; margin: 20px auto;">
+  <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/7EXWbuCAz7M" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen 
+    style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </iframe>
+</div>
+
 <figure class="third">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png" style="width: 130px">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png" style="width: 140px">
