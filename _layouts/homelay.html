@@ -6,12 +6,7 @@ layout: default
   <div class="col-sm-12">
     <h1>Welcome to the <br>Culture, Language & Learning Lab</h1>
 
-    <!-- This is your Video and Main Text from the .md file -->
-    {{ content }}
-  </div>
-</div>
-
- <!-- This puts the news at the top -->
+     <!-- This puts the news at the top -->
     <div id="newsid_top" style="margin-bottom: 30px;">
       <hr>
       <h3>Latest News</h3>
@@ -19,7 +14,7 @@ layout: default
       {% if site.news %}
         <table class="table table-sm table-borderless">
           {% assign news_sorted = site.news | reverse %}
-          {% for item in news_sorted limit: 3 %}
+          {% for item in news_sorted limit: 2 %}
             <tr>
               <th scope="row" style="width: 20%;">{{ item.date | date: "%b %-d, %Y" }}</th>
               <td>
@@ -34,6 +29,12 @@ layout: default
       
       <hr>
     </div>
+
+    <!-- This is your Video and Main Text from the .md file -->
+    {{ content }}
+  </div>
+</div>
+
 
 <style>
   /* This hides the sidebar news if your theme is forcing it at the bottom */
