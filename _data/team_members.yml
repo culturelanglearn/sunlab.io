@@ -2,10 +2,20 @@
 - name: Audrey Chang
   photo: Audrey.jpeg
   info: Lab Manager & Research Assistant 
-  email: achang3398@gmail.com
+  email: audrey.chang@polyu.edu.hk
   number_educ: 1
   education1: |
     University of British Columbia, B.Sc. in Neuroscience 
+
+ - name: April Li
+  photo: April.jpeg
+  info: Lab Manager & Research Assistant 
+  email: aprilwj.li@polyu.edu.hk
+  number_educ: 2
+  education1: |
+    University of British Columbia, B.A. in Psychology 
+  education2: |
+    University of Hong Kong, M.E.d. in Guidance and Counseling 
 
 #- name: Yudai Sato
 #  photo: Sato.jpeg
