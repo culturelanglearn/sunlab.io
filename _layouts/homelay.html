@@ -4,40 +4,133 @@ layout: default
 
 <div class="row">
   <div class="col-sm-12">
-    <h1>Welcome to the <br>Culture, Language & Learning Lab</h1>
+    <h1>
+      Welcome to the <br>
+      Culture, Language & Learning Lab
+    </h1>
 
-     <!-- This puts the news at the top -->
-    <div id="newsid_top" style="margin-bottom: 30px;">
-      <hr>
-      <h3>Latest News</h3>
-      
-      {% if site.news %}
-        <table class="table table-sm table-borderless">
-          {% assign news_sorted = site.news | reverse %}
-          {% for item in news_sorted limit: 2 %}
-            <tr>
-              <th scope="row" style="width: 20%;">{{ item.date | date: "%b %-d, %Y" }}</th>
-              <td>
-                {{ item.content | remove: '<p>' | remove: '</p>' }}
-              </td>
-            </tr>
-          {% endfor %}
-        </table>
-      {% else %}
-        {% include news.html %}
-      {% endif %}
-      
-      <hr>
+    <hr>
+
+    <div class="home-feature-row">
+
+      <!-- Left: Latest News -->
+      <section id="newsid_top" class="home-feature-column">
+        <h3>Latest News</h3>
+
+        {% if site.news %}
+          <table class="table table-sm table-borderless">
+            {% assign news_sorted = site.news | reverse %}
+            {% for item in news_sorted limit: 2 %}
+              <tr>
+                <th scope="row" style="width: 25%;">
+                  {{ item.date | date: "%b %-d, %Y" }}
+                </th>
+                <td>
+                  {{ item.content | remove: '<p>' | remove: '</p>' }}
+                </td>
+              </tr>
+            {% endfor %}
+          </table>
+        {% else %}
+          {% include news.html %}
+        {% endif %}
+      </section>
+
+      <!-- Right: Lab Videos -->
+      <section class="home-feature-column home-video-column">
+        <h3>Lab Videos</h3>
+
+        <div class="home-video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/EU5mK4ut8lU"
+            title="Culture, Language and Learning Lab English video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="home-video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/Kfpzrj6Zc1E"
+            title="Culture, Language and Learning Lab Cantonese video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
     </div>
 
-    <!-- This is your Video and Main Text from the .md file -->
+    <hr>
+
+    <!-- Main text from home.md -->
     {{ content }}
   </div>
 </div>
 
-
 <style>
-  /* This hides the sidebar news if your theme is forcing it at the bottom */
+  .home-feature-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 30px;
+  }
+
+  .home-feature-column {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .home-feature-column h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+
+  .home-video-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .home-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .home-video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Hide the duplicate sidebar news section */
+  #newsid {
+    display: none !important;
+  }
+
+  /* Return to vertical layout on tablets and phones */
+  @media (max-width: 767px) {
+    .home-feature-row {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .home-feature-column {
+      width: 100%;
+    }
+  }
+</style>
   #newsid {
     display: none !important;
   }
