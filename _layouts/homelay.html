@@ -4,6 +4,7 @@ layout: default
 
 <div class="row">
   <div class="col-sm-12">
+
     <h1>
       Welcome to the <br>
       Culture, Language & Learning Lab
@@ -13,32 +14,56 @@ layout: default
 
     <div class="home-feature-row">
 
-      <!-- Left: Latest News -->
-      <section id="newsid_top" class="home-feature-column">
+      <!-- Left column: Latest News -->
+      <section id="newsid_top" class="home-news-column">
+
         <h3>Latest News</h3>
 
         {% if site.news %}
-          <table class="table table-sm table-borderless">
-            {% assign news_sorted = site.news | reverse %}
+          {% assign news_sorted = site.news | reverse %}
+
+          <div class="home-news-list">
             {% for item in news_sorted limit: 2 %}
-              <tr>
-                <th scope="row" style="width: 25%;">
-                  {{ item.date | date: "%b %-d, %Y" }}
-                </th>
-                <td>
+              <article class="home-news-item">
+
+                <div class="home-news-date">
+                  {{ item.date | date: "%B %-d, %Y" }}
+                </div>
+
+                <div class="home-news-content">
                   {{ item.content | remove: '<p>' | remove: '</p>' }}
-                </td>
-              </tr>
+                </div>
+
+              </article>
             {% endfor %}
-          </table>
+          </div>
+
         {% else %}
           {% include news.html %}
         {% endif %}
+
+        <div class="participant-notice">
+          <strong>
+            Our Lab is currently recruiting child participants!
+          </strong>
+
+          <p>
+            Sign up
+            <a href="https://polyu.qualtrics.com/jfe/form/SV_0emO9s8LTRy9jEy">
+              here
+            </a>
+            to join us for a research journey with fun activities, toys,
+            and cash rewards!
+          </p>
+        </div>
+
       </section>
 
-      <!-- Right: Lab Videos -->
-      <section class="home-feature-column home-video-column">
-        <h3>Lab Videos</h3>
+
+      <!-- Right column: About Us -->
+      <section class="home-about-column">
+
+        <h3>About Us</h3>
 
         <div class="home-video-wrapper">
           <iframe
@@ -61,46 +86,84 @@ layout: default
             allowfullscreen>
           </iframe>
         </div>
+
+        <!-- Introduction from home.md -->
+        <div class="home-about-content">
+          {{ content }}
+        </div>
+
       </section>
 
     </div>
 
-    <hr>
-
-    <!-- Main text from home.md -->
-    {{ content }}
   </div>
 </div>
 
+
 <style>
   .home-feature-row {
-    display: flex;
-    align-items: flex-start;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: 36% minmax(0, 1fr);
+    align-items: start;
+    gap: 36px;
     margin-bottom: 30px;
   }
 
-  .home-feature-column {
-    flex: 1 1 0;
+  .home-news-column,
+  .home-about-column {
     min-width: 0;
   }
 
-  .home-feature-column h3 {
+  .home-news-column h3,
+  .home-about-column h3 {
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
-  .home-video-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  /* Latest News */
+
+  .home-news-item {
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #eeeeee;
   }
+
+  .home-news-date {
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+
+  .home-news-content {
+    line-height: 1.6;
+  }
+
+  .home-news-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 12px;
+  }
+
+  .participant-notice {
+    padding: 16px;
+    margin-top: 22px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    line-height: 1.6;
+  }
+
+  .participant-notice p {
+    margin: 6px 0 0;
+  }
+
+  /* Videos */
 
   .home-video-wrapper {
     position: relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
+    margin-bottom: 20px;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -108,25 +171,43 @@ layout: default
 
   .home-video-wrapper iframe {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
   }
 
-  /* Hide the duplicate sidebar news section */
+  /* About Us text */
+
+  .home-about-content {
+    margin-top: 28px;
+    line-height: 1.7;
+  }
+
+  .home-about-content p {
+    margin-bottom: 18px;
+  }
+
+  .home-about-content img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hide duplicate theme news section */
+
   #newsid {
     display: none !important;
   }
 
-  /* Return to vertical layout on tablets and phones */
-  @media (max-width: 767px) {
+  /* Tablet and phone layout */
+
+  @media (max-width: 900px) {
     .home-feature-row {
-      flex-direction: column;
-      gap: 24px;
+      grid-template-columns: 1fr;
+      gap: 32px;
     }
 
-    .home-feature-column {
+    .home-news-column,
+    .home-about-column {
       width: 100%;
     }
   }
