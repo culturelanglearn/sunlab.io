@@ -7,7 +7,6 @@ permalink: /
 ---
 
 
-**News: Our Lab is currently recruiting child participants! Sign up [here](https://polyu.qualtrics.com/jfe/form/SV_0emO9s8LTRy9jEy) to join us for a research journey with fun activities, toys, and cash rewards!** 
 
 We are a research group at [PolyU HK](https://research.polyu.edu.hk/en/) in the Department of [Language and Technology](https://research.polyu.edu.hk/en/organisations/department-of-language-science-and-technology/). Our lab is directed by [Dr. Xin Sun](https://culturelanglearn.github.io/sunlab.io/director/), an assistant professor in the department. 
 
