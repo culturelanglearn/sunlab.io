@@ -6,35 +6,6 @@ sitemap: false
 permalink: /
 ---
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 20px auto;">
-  
-  <!-- Video 1 -->
-  <iframe 
-    width="450" 
-    height="253" 
-    src="https://www.youtube.com/embed/EU5mK4ut8lU" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen 
-    style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  </iframe>
-
-  <!-- Video 2 (Replace URL with your second video) -->
-  <iframe 
-    width="450" 
-    height="253" 
-    src="https://www.youtube.com/embed/Kfpzrj6Zc1E" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen 
-    style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  </iframe>
-
-</div>
 
 **News: Our Lab is currently recruiting child participants! Sign up [here](https://polyu.qualtrics.com/jfe/form/SV_0emO9s8LTRy9jEy) to join us for a research journey with fun activities, toys, and cash rewards!** 
 
