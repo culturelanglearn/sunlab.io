@@ -181,7 +181,7 @@ layout: default
   /* Homepage logos */
 
 .logo-row {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
@@ -189,32 +189,32 @@ layout: default
   margin: 32px 0 12px;
 }
 
-.logo-row .lab-logo {
-  display: block;
-  flex: 0 0 auto;
-  width: 90px;
-  height: auto;
-  margin: 0;
+.lab-logo {
+  display: block !important;
+  flex: 0 0 90px;
+  width: 90px !important;
+  max-width: 90px !important;
+  height: auto !important;
+  margin: 0 !important;
 }
 
-.logo-row .polyu-logo {
-  display: block;
-  flex: 0 0 auto;
-  width: 150px;
-  max-width: 150px;
-  height: auto;
-  margin: 0;
+.polyu-logo {
+  display: block !important;
+  flex: 0 0 150px;
+  width: 150px !important;
+  max-width: 150px !important;
+  height: auto !important;
+  margin: 0 !important;
 }
 
-.logo-row .lst-logo {
-  display: block;
-  flex: 0 0 auto;
-  width: 170px;
-  max-width: 170px;
-  height: auto;
-  margin: 0;
+.lst-logo {
+  display: block !important;
+  flex: 0 0 170px;
+  width: 170px !important;
+  max-width: 170px !important;
+  height: auto !important;
+  margin: 0 !important;
 }
-
   /* Hide duplicate theme news section */
 
   #newsid {
