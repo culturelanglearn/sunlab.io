@@ -17,16 +17,39 @@ Our research uses various methods, including behavioural assessments, surveys, a
 
 Follow us on instagram @culturelanglearnlab or [(facebook)](https://www.facebook.com/culturelanglearnlabhk) for updates on study recruitment and our latest research! 
 
-<video autoplay muted loop style="width: 80%; max-width: 100px; display: block; margin: 20px auto;">
-  <source src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="participant-notice">
+  <strong>Our Lab is currently recruiting child participants!</strong>
 
-<figure class="second">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png" style="width: 130px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png" style="width: 140px">
-</figure>
+  <p>
+    Sign up
+    <a href="https://polyu.qualtrics.com/jfe/form/SV_0emO9s8LTRy9jEy">
+      here
+    </a>
+    to join us for a research journey with fun activities, toys,
+    and cash rewards!
+  </p>
+</div>
 
+<div class="logo-row">
+
+  <video autoplay muted loop playsinline class="lab-logo">
+    <source
+      src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4"
+      type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <img
+    class="polyu-logo"
+    src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png"
+    alt="The Hong Kong Polytechnic University">
+
+  <img
+    class="lst-logo"
+    src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png"
+    alt="Department of Language Science and Technology">
+
+</div>
 
 <!-- SLIDE SHOW COMMENTED OUT - Audrey 06/11/2025
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
