@@ -30,13 +30,6 @@ Follow us on instagram @culturelanglearnlab or [(facebook)](https://www.facebook
   </p>
 </div>
 
-<div class="logo-row" markdown="0">
-  <video autoplay muted loop playsinline class="lab-logo" width="90">
-    <source src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4" type="video/mp4">
-  </video>
-  <img class="polyu-logo" width="150" src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png" alt="The Hong Kong Polytechnic University">
-  <img class="lst-logo" width="170" src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png" alt="Department of Language Science and Technology">
-</div>
 
 <!-- SLIDE SHOW COMMENTED OUT - Audrey 06/11/2025
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
