@@ -85,6 +85,18 @@ layout: default
 <div class="logo-row">
 
   <div class="logo-left">
+    <img
+      class="polyu-logo"
+      src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png"
+      alt="The Hong Kong Polytechnic University">
+  </div>
+
+  <div class="logo-right">
+    <img
+      class="lst-logo"
+      src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png"
+      alt="Department of Language Science and Technology">
+
     <video autoplay muted loop playsinline class="lab-logo">
       <source
         src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4"
@@ -92,21 +104,7 @@ layout: default
     </video>
   </div>
 
-  <div class="logo-right">
-    <img
-      class="polyu-logo"
-      src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png"
-      alt="The Hong Kong Polytechnic University">
-
-    <img
-      class="lst-logo"
-      src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png"
-      alt="Department of Language Science and Technology">
-  </div>
-
 </div>
-</div>
-
 
 <style>
   .home-feature-row {
@@ -237,20 +235,35 @@ layout: default
   margin: 0 !important;
 }
 
-.lab-logo {
-  width: 115px !important;
-  max-width: 115px !important;
+.logo-row img,
+.logo-row video {
+  display: block !important;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  object-fit: contain;
 }
 
+/* PolyU Logo */
 .polyu-logo {
-  width: 210px !important;
-  max-width: 210px !important;
+  height: 76px !important;
 }
 
+/* LST Logo */
 .lst-logo {
-  width: 245px !important;
-  max-width: 245px !important;
+  height: 86px !important;
 }
+
+/* Lab Logo */
+.lab-logo {
+  height: 105px !important;
+}
+  .logo-left,
+.logo-right {
+  display: flex;
+  align-items: center;
+}
+  
   /* Hide duplicate theme news section */
 
   #newsid {
@@ -287,19 +300,22 @@ layout: default
     gap: 24px;
   }
 
-  .lab-logo {
-    width: 95px !important;
-    max-width: 95px !important;
-  }
+ .polyu-logo {
+  width: auto !important;
+  max-width: 100% !important;
+  height: 62px !important;
+}
 
-  .polyu-logo {
-    width: 175px !important;
-    max-width: 175px !important;
-  }
+.lst-logo {
+  width: auto !important;
+  max-width: 100% !important;
+  height: 70px !important;
+}
 
-  .lst-logo {
-    width: 205px !important;
-    max-width: 205px !important;
-  }
+.lab-logo {
+  width: auto !important;
+  max-width: 100% !important;
+  height: 88px !important;
+}
 }
 </style>
