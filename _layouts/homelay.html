@@ -82,25 +82,29 @@ layout: default
       </section>
 
     </div>
-   <div class="logo-row">
-      <video autoplay muted loop playsinline class="lab-logo">
-        <source
-          src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4"
-          type="video/mp4">
-      </video>
+<div class="logo-row">
 
-      <img
-        class="polyu-logo"
-        src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png"
-        alt="The Hong Kong Polytechnic University">
-
-      <img
-        class="lst-logo"
-        src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png"
-        alt="Department of Language Science and Technology">
-    </div>
-
+  <div class="logo-left">
+    <video autoplay muted loop playsinline class="lab-logo">
+      <source
+        src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4"
+        type="video/mp4">
+    </video>
   </div>
+
+  <div class="logo-right">
+    <img
+      class="polyu-logo"
+      src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png"
+      alt="The Hong Kong Polytechnic University">
+
+    <img
+      class="lst-logo"
+      src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png"
+      alt="Department of Language Science and Technology">
+  </div>
+
+</div>
 </div>
 
 
@@ -199,40 +203,53 @@ layout: default
   }
   /* Homepage logos */
 
+/* Homepage logos */
+
 .logo-row {
-  display: flex;
+  display: grid !important;
+  grid-template-columns: 36% minmax(0, 1fr);
+  column-gap: 36px;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
   width: 100%;
-  padding: 28px 0 16px;
-  margin: 0;
+  margin: 0 !important;
+  padding: 32px 0 22px;
   border-top: 1px solid #eeeeee;
 }
 
+.logo-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 18px;
+}
+
+.logo-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 42px;
+}
+
+.logo-row img,
+.logo-row video {
+  display: block !important;
+  height: auto !important;
+  margin: 0 !important;
+}
+
 .lab-logo {
-  display: block;
-  width: 82px;
-  max-width: 82px;
-  height: auto;
-  margin: 0;
+  width: 115px !important;
+  max-width: 115px !important;
 }
 
 .polyu-logo {
-  display: block;
-  width: 155px;
-  max-width: 155px;
-  height: auto;
-  margin: 0;
+  width: 210px !important;
+  max-width: 210px !important;
 }
 
 .lst-logo {
-  display: block;
-  width: 185px;
-  max-width: 185px;
-  height: auto;
-  margin: 0;
+  width: 245px !important;
+  max-width: 245px !important;
 }
   /* Hide duplicate theme news section */
 
@@ -242,15 +259,47 @@ layout: default
 
   /* Tablet and phone layout */
 
-  @media (max-width: 900px) {
-    .home-feature-row {
-      grid-template-columns: 1fr;
-      gap: 32px;
-    }
-
-    .home-news-column,
-    .home-about-column {
-      width: 100%;
-    }
+@media (max-width: 900px) {
+  .home-feature-row {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
+
+  .home-news-column,
+  .home-about-column {
+    width: 100%;
+  }
+
+  .logo-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-top: 26px;
+  }
+
+  .logo-left,
+  .logo-right {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .logo-right {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .lab-logo {
+    width: 95px !important;
+    max-width: 95px !important;
+  }
+
+  .polyu-logo {
+    width: 175px !important;
+    max-width: 175px !important;
+  }
+
+  .lst-logo {
+    width: 205px !important;
+    max-width: 205px !important;
+  }
+}
 </style>
