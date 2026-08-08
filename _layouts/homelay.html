@@ -7,7 +7,7 @@ layout: default
 
     <h1>
       Welcome to the <br>
-      Culture, Language & Learning Lago-row
+      Culture, Language & Learning Lab
     </h1>
 
     <hr>
@@ -50,6 +50,7 @@ layout: default
 
         <h3>About Us</h3>
 
+        <!-- English video -->
         <div class="home-video-wrapper">
           <iframe
             src="https://www.youtube.com/embed/EU5mK4ut8lU"
@@ -61,6 +62,7 @@ layout: default
           </iframe>
         </div>
 
+        <!-- Cantonese video -->
         <div class="home-video-wrapper">
           <iframe
             src="https://www.youtube.com/embed/Kfpzrj6Zc1E"
@@ -123,7 +125,9 @@ layout: default
 
 <style>
 
-  /* Main two-column homepage layout */
+  /* ================================
+     Main homepage layout
+     ================================ */
 
   .home-feature-row {
     display: grid;
@@ -147,7 +151,9 @@ layout: default
   }
 
 
-  /* Latest News */
+  /* ================================
+     Latest News
+     ================================ */
 
   .home-news-item {
     padding-bottom: 22px;
@@ -176,7 +182,9 @@ layout: default
   }
 
 
-  /* Participant notice */
+  /* ================================
+     Participant notice
+     ================================ */
 
   .participant-notice {
     padding: 16px;
@@ -191,7 +199,9 @@ layout: default
   }
 
 
-  /* Videos */
+  /* ================================
+     Videos
+     ================================ */
 
   .home-video-wrapper {
     position: relative;
@@ -212,7 +222,9 @@ layout: default
   }
 
 
-  /* About Us text */
+  /* ================================
+     About Us text
+     ================================ */
 
   .home-about-content {
     margin-top: 28px;
@@ -229,79 +241,82 @@ layout: default
   }
 
 
-  /* Homepage logos */
+  /* ================================
+     Organisation logos
+     ================================ */
 
-.logo-row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: center;
-  column-gap: 30px;
-  width: 100%;
-  padding: 22px 0;
-  margin: 0;
-  border-top: 1px solid #eeeeee;
-}
+  .logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.logo-item {
-  display: flex;
-  align-items: center;
-  height: 95px;   /* 三个 Logo 共用同样的视觉区域 */
-  min-width: 0;
-}
+    width: 100%;
+    padding: 22px 0;
+    margin: 0;
 
-.logo-polyu {
-  justify-content: flex-start;
-}
+    border-top: 1px solid #eeeeee;
+  }
 
-.logo-lst {
-  justify-content: center;
-}
+  .logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.logo-lab {
-  justify-content: center;
-  transform: translateX(-25px);
-}
-  
-.logo-row img,
-.logo-row video {
-  display: block;
-  width: auto;
-  height: auto;
-  max-height: 90px;
-  margin: 0;
-  object-fit: contain;
-}
+    height: 110px;
+    flex: 0 0 auto;
+
+    padding: 0;
+    margin: 0;
+    transform: none;
+  }
+
+  .logo-row img,
+  .logo-row video {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0;
+    object-fit: contain;
+  }
 
 
-/* 视觉大小分别微调 */
+  /* PolyU logo */
 
-/* PolyU */
-.polyu-logo {
-  width: 205px;
-  max-width: 100%;
-}
+  .polyu-logo {
+    width: 205px;
+    max-width: 100%;
+  }
 
-/* LST：把现在的 245px 缩小 */
-.lst-logo {
-  width: 190px;
-  max-width: 100%;
-}
 
-/* Lab */
-.lab-logo {
-  width: 145px;
-  max-width: 100%;
-  max-height: 110px !important;
-}
+  /* LST logo */
 
-  /* Hide duplicate theme news section */
+  .lst-logo {
+    width: 190px;
+    max-width: 100%;
+  }
+
+
+  /* Lab logo */
+
+  .lab-logo {
+    width: 145px;
+    max-width: 100%;
+    max-height: 110px;
+  }
+
+
+  /* ================================
+     Hide duplicate theme news
+     ================================ */
 
   #newsid {
     display: none !important;
   }
 
 
-  /* Tablet and phone layout */
+  /* ================================
+     Tablet and phone layout
+     ================================ */
 
   @media (max-width: 900px) {
 
@@ -315,16 +330,19 @@ layout: default
       width: 100%;
     }
 
+
+    /* Stack logos vertically */
+
     .logo-row {
-      grid-template-columns: 1fr;
-      gap: 24px;
-      min-height: 0;
+      flex-direction: column;
+      justify-content: center;
+      gap: 22px;
       padding: 26px 0;
     }
 
-    .logo-polyu,
-    .logo-lst,
-    .logo-lab {
+    .logo-item {
+      width: 100%;
+      height: auto;
       justify-content: center;
     }
 
@@ -334,13 +352,14 @@ layout: default
     }
 
     .lst-logo {
-      width: 220px;
+      width: 175px;
       max-width: 100%;
     }
 
     .lab-logo {
-      width: 90px;
+      width: 120px;
       max-width: 100%;
+      max-height: none;
     }
   }
 
