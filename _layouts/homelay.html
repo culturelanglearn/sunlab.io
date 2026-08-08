@@ -7,7 +7,7 @@ layout: default
 
     <h1>
       Welcome to the <br>
-      Culture, Language & Learning Lab
+      Culture, Language & Learning Lago-row
     </h1>
 
     <hr>
@@ -231,61 +231,68 @@ layout: default
 
   /* Homepage logos */
 
-  .logo-row {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-items: center;
-    column-gap: 30px;
-    width: 100%;
-    min-height: 125px;
-    padding: 24px 0 22px;
-    margin: 0;
-    border-top: 1px solid #eeeeee;
-  }
+/* Homepage logos */
 
-  .logo-item {
-    display: flex;
-    align-items: center;
-    min-width: 0;
-  }
+.logo-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  column-gap: 30px;
+  width: 100%;
+  padding: 22px 0;
+  margin: 0;
+  border-top: 1px solid #eeeeee;
+}
 
-  .logo-polyu {
-    justify-content: flex-start;
-  }
+.logo-item {
+  display: flex;
+  align-items: center;
+  height: 95px;   /* 三个 Logo 共用同样的视觉区域 */
+  min-width: 0;
+}
 
-  .logo-lst {
-    justify-content: center;
-  }
+.logo-polyu {
+  justify-content: flex-start;
+}
 
-  .logo-lab {
-    justify-content: flex-end;
-  }
+.logo-lst {
+  justify-content: center;
+}
 
-  .logo-row img,
-  .logo-row video {
-    display: block;
-    height: auto;
-    margin: 0;
-    object-fit: contain;
-  }
+.logo-lab {
+  justify-content: flex-end;
+}
 
-  /* Individual desktop logo sizes */
+.logo-row img,
+.logo-row video {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 90px;
+  margin: 0;
+  object-fit: contain;
+}
 
-  .polyu-logo {
-    width: 205px;
-    max-width: 100%;
-  }
 
-  .lst-logo {
-    width: 245px;
-    max-width: 100%;
-  }
+/* 视觉大小分别微调 */
 
-  .lab-logo {
-    width: 105px;
-    max-width: 100%;
-  }
+/* PolyU */
+.polyu-logo {
+  width: 205px;
+  max-width: 100%;
+}
 
+/* LST：把现在的 245px 缩小 */
+.lst-logo {
+  width: 190px;
+  max-width: 100%;
+}
+
+/* Lab */
+.lab-logo {
+  width: 100px;
+  max-width: 100%;
+}
 
   /* Hide duplicate theme news section */
 
