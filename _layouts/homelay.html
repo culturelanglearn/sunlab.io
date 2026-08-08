@@ -1,366 +1,112 @@
----
 layout: default
----
+<h1>
+  Welcome to the <br>
+  Culture, Language & Learning Lago-row
+</h1>
 
-<div class="row">
-  <div class="col-sm-12">
+<hr>
 
-    <h1>
-      Welcome to the <br>
-      Culture, Language & Learning Lab
-    </h1>
+<div class="home-feature-row">
 
-    <hr>
+  <!-- Left column: Latest News -->
+  <section id="newsid_top" class="home-news-column">
 
-    <div class="home-feature-row">
+    <h3>Latest News</h3>
 
-      <!-- Left column: Latest News -->
-      <section id="newsid_top" class="home-news-column">
+    {% if site.news %}
+      {% assign news_sorted = site.news | reverse %}
 
-        <h3>Latest News</h3>
+      <div class="home-news-list">
+        {% for item in news_sorted limit: 2 %}
+          <article class="home-news-item">
 
-        {% if site.news %}
-          {% assign news_sorted = site.news | reverse %}
+            <div class="home-news-date">
+              {{ item.date | date: "%B %-d, %Y" }}
+            </div>
 
-          <div class="home-news-list">
-            {% for item in news_sorted limit: 2 %}
-              <article class="home-news-item">
+            <div class="home-news-content">
+              {{ item.content | remove: '<p>' | remove: '</p>' }}
+            </div>
 
-                <div class="home-news-date">
-                  {{ item.date | date: "%B %-d, %Y" }}
-                </div>
+          </article>
+        {% endfor %}
+      </div>
 
-                <div class="home-news-content">
-                  {{ item.content | remove: '<p>' | remove: '</p>' }}
-                </div>
+    {% else %}
+      {% include news.html %}
+    {% endif %}
 
-              </article>
-            {% endfor %}
-          </div>
-
-        {% else %}
-          {% include news.html %}
-        {% endif %}
-
-      </section>
+  </section>
 
 
-      <!-- Right column: About Us -->
-      <section class="home-about-column">
+  <!-- Right column: About Us -->
+  <section class="home-about-column">
 
-        <h3>About Us</h3>
+    <h3>About Us</h3>
 
-        <!-- English video -->
-        <div class="home-video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/EU5mK4ut8lU"
-            title="Culture, Language and Learning Lab English video"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <!-- Cantonese video -->
-        <div class="home-video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/Kfpzrj6Zc1E"
-            title="Culture, Language and Learning Lab Cantonese video"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-          </iframe>
-        </div>
-
-        <!-- Introduction from home.md -->
-        <div class="home-about-content">
-          {{ content }}
-        </div>
-
-      </section>
-
+    <div class="home-video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/EU5mK4ut8lU"
+        title="Culture, Language and Learning Lab English video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
     </div>
 
-
-    <!-- Organisation logos -->
-    <div class="logo-row">
-
-      <!-- PolyU -->
-      <div class="logo-item logo-polyu">
-        <img
-          class="polyu-logo"
-          src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png"
-          alt="The Hong Kong Polytechnic University">
-      </div>
-
-      <!-- Department of Language Science and Technology -->
-      <div class="logo-item logo-lst">
-        <img
-          class="lst-logo"
-          src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png"
-          alt="Department of Language Science and Technology">
-      </div>
-
-      <!-- Culture, Language and Learning Lab -->
-      <div class="logo-item logo-lab">
-        <video
-          autoplay
-          muted
-          loop
-          playsinline
-          class="lab-logo">
-          <source
-            src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4"
-            type="video/mp4">
-        </video>
-      </div>
-
+    <div class="home-video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/Kfpzrj6Zc1E"
+        title="Culture, Language and Learning Lab Cantonese video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
     </div>
 
-  </div>
+    <!-- Introduction from home.md -->
+    <div class="home-about-content">
+      {{ content }}
+    </div>
+
+  </section>
+
 </div>
 
 
-<style>
+<!-- Organisation logos -->
+<div class="logo-row">
 
-  /* ================================
-     Main homepage layout
-     ================================ */
+  <!-- PolyU -->
+  <div class="logo-item logo-polyu">
+    <img
+      class="polyu-logo"
+      src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png"
+      alt="The Hong Kong Polytechnic University">
+  </div>
 
-  .home-feature-row {
-    display: grid;
-    grid-template-columns: 36% minmax(0, 1fr);
-    align-items: stretch;
-    gap: 36px;
-    margin-bottom: 22px;
-  }
+  <!-- Department of Language Science and Technology -->
+  <div class="logo-item logo-lst">
+    <img
+      class="lst-logo"
+      src="{{ site.url }}{{ site.baseurl }}/images/logo/LST.png"
+      alt="Department of Language Science and Technology">
+  </div>
 
-  .home-news-column,
-  .home-about-column {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-  }
+  <!-- Culture, Language and Learning Lab -->
+  <div class="logo-item logo-lab">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="lab-logo">
+      <source
+        src="{{ site.url }}{{ site.baseurl }}/images/logo/Logo.mp4"
+        type="video/mp4">
+    </video>
+  </div>
 
-  .home-news-column h3,
-  .home-about-column h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-
-
-  /* ================================
-     Latest News
-     ================================ */
-
-  .home-news-item {
-    padding-bottom: 22px;
-    margin-bottom: 22px;
-    border-bottom: 1px solid #eeeeee;
-  }
-
-  .home-news-item:last-child {
-    margin-bottom: 0;
-  }
-
-  .home-news-date {
-    margin-bottom: 8px;
-    font-weight: 700;
-  }
-
-  .home-news-content {
-    line-height: 1.6;
-  }
-
-  .home-news-content img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin-top: 12px;
-  }
-
-
-  /* ================================
-     Participant notice
-     ================================ */
-
-  .participant-notice {
-    padding: 16px;
-    margin-top: 22px;
-    background: #f7f7f7;
-    border-radius: 6px;
-    line-height: 1.6;
-  }
-
-  .participant-notice p {
-    margin: 6px 0 0;
-  }
-
-
-  /* ================================
-     Videos
-     ================================ */
-
-  .home-video-wrapper {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .home-video-wrapper iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-
-  /* ================================
-     About Us text
-     ================================ */
-
-  .home-about-content {
-    margin-top: 28px;
-    line-height: 1.7;
-  }
-
-  .home-about-content p {
-    margin-bottom: 18px;
-  }
-
-  .home-about-content img {
-    max-width: 100%;
-    height: auto;
-  }
-
-
-  /* ================================
-     Organisation logos
-     ================================ */
-
-  .logo-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    width: 100%;
-    padding: 22px 0;
-    margin: 0;
-
-    border-top: 1px solid #eeeeee;
-  }
-
-  .logo-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 110px;
-    flex: 0 0 auto;
-
-    padding: 0;
-    margin: 0;
-    transform: none;
-  }
-
-  .logo-row img,
-  .logo-row video {
-    display: block;
-    width: auto;
-    height: auto;
-    margin: 0;
-    object-fit: contain;
-  }
-
-
-  /* PolyU logo */
-
-  .polyu-logo {
-    width: 205px;
-    max-width: 100%;
-  }
-
-
-  /* LST logo */
-
-  .lst-logo {
-    width: 190px;
-    max-width: 100%;
-  }
-
-
-  /* Lab logo */
-
-  .lab-logo {
-    width: 145px;
-    max-width: 100%;
-    max-height: 110px;
-  }
-
-
-  /* ================================
-     Hide duplicate theme news
-     ================================ */
-
-  #newsid {
-    display: none !important;
-  }
-
-
-  /* ================================
-     Tablet and phone layout
-     ================================ */
-
-  @media (max-width: 900px) {
-
-    .home-feature-row {
-      grid-template-columns: 1fr;
-      gap: 32px;
-    }
-
-    .home-news-column,
-    .home-about-column {
-      width: 100%;
-    }
-
-
-    /* Stack logos vertically */
-
-    .logo-row {
-      flex-direction: column;
-      justify-content: center;
-      gap: 22px;
-      padding: 26px 0;
-    }
-
-    .logo-item {
-      width: 100%;
-      height: auto;
-      justify-content: center;
-    }
-
-    .polyu-logo {
-      width: 185px;
-      max-width: 100%;
-    }
-
-    .lst-logo {
-      width: 175px;
-      max-width: 100%;
-    }
-
-    .lab-logo {
-      width: 120px;
-      max-width: 100%;
-      max-height: none;
-    }
-  }
-
-</style>
+</div>
