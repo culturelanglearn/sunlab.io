@@ -15,7 +15,45 @@ Our research uses various methods, including behavioural assessments, surveys, a
 
 **We are looking for passionate new PhD students, Postdocs, Master, and undergraduate students to join the team** [(more info)](https://culturelanglearn.github.io/sunlab.io/vacancies) **!**
 
-Follow us on instagram @culturelanglearnlab or [(facebook)](https://www.facebook.com/culturelanglearnlabhk) for updates on study recruitment and our latest research! 
+<p class="social-follow">
+  Follow us on
+
+  <a
+    class="social-link"
+    href="https://www.instagram.com/culturelanglearnlab/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Culture Language and Learning Lab Instagram">
+
+    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+    </svg>
+
+    Instagram @culturelanglearnlab
+  </a>
+
+  or
+
+  <a
+    class="social-link"
+    href="https://www.facebook.com/culturelanglearnlabhk"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Culture Language and Learning Lab Facebook">
+
+    <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fill="currentColor"
+        d="M14 8h3V4h-3c-3.3 0-5 2-5 5v2H6v4h3v7h4v-7h3.3l.7-4H13V9c0-.7.3-1 1-1z"/>
+    </svg>
+
+    Facebook
+  </a>
+
+  for updates on study recruitment and our latest research!
+</p>
 
 <div class="participant-notice">
   <strong>Our Lab is currently recruiting child participants!</strong>
