@@ -381,4 +381,19 @@ layout: default
   }
 }
 
+@media (min-width: 901px) {
+  #newsid_top > .well {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  /* 将 “see all News” 放在新闻框底部 */
+  #newsid_top > .well > h4:last-child {
+    margin-top: auto;
+    padding-top: 20px;
+    margin-bottom: 0;
+  }
+}
 </style>
