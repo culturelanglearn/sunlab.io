@@ -25,7 +25,7 @@ Michal, A., Fansher, M., <b>Sun, X.</b>, Zhang, H., & Shah, P. (2018). Cognitive
 
 ## Public outreach & Non-academic Publications
 
-Wang, Y., & <b>Sun, X.</b> (2026, August 12). *为什么我们既努力又拿高分，却不相信“努力让人变得更聪明”？* [Why do we work hard and achieve high scores, yet not believe that effort makes us smarter?]. MsMuses. [Read on WeChat](https://mp.weixin.qq.com/s/ro4_H_n3TRDJgcJtHYkojQ).
+ <b>Sun, X.，</b> & Wang, Y.(2026, August 12). *为什么我们既努力又拿高分，却不相信“努力让人变得更聪明”？* [Why do we work hard and achieve high scores, yet not believe that effort makes us smarter?]. MsMuses. [Read on WeChat](https://mp.weixin.qq.com/s/ro4_H_n3TRDJgcJtHYkojQ).
 
 Q&A with <b>Dr. Xin Sun</b> on exploring infant & toddler minds (lexico-semantic representations) (June 11, 2025). UBC Language Sciences. Link to the interview: [https://languagesciences.ubc.ca/news/june-06-2025/qa-dr-xin-sun-exploring-infant-toddler-minds-lexico-semantic-representations](https://languagesciences.ubc.ca/news/june-06-2025/qa-dr-xin-sun-exploring-infant-toddler-minds-lexico-semantic-representations)
 
