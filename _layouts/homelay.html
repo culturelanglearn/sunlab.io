@@ -381,7 +381,19 @@ layout: default
   }
 }
 
+/* 桌面端：左右两栏自动等高、底部对齐 */
 @media (min-width: 901px) {
+  .home-feature-row {
+    align-items: stretch;
+  }
+
+  .home-news-column,
+  .home-about-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 左侧新闻框填满所在栏 */
   #newsid_top > .well {
     flex: 1;
     display: flex;
@@ -389,10 +401,28 @@ layout: default
     margin-bottom: 0;
   }
 
-  /* 将 “see all News” 放在新闻框底部 */
+  /* “see all News” 始终位于新闻框底部 */
   #newsid_top > .well > h4:last-child {
     margin-top: auto;
     padding-top: 20px;
+    margin-bottom: 0;
+  }
+
+  /* 右侧介绍区填满剩余高度 */
+  .home-about-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 为招募框前保留基本间距 */
+  .home-about-content > .social-follow {
+    margin-bottom: 22px;
+  }
+
+  /* 招募框始终位于右栏底部 */
+  .home-about-content > .participant-notice {
+    margin-top: auto;
     margin-bottom: 0;
   }
 }
