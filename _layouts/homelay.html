@@ -426,4 +426,33 @@ layout: default
     margin-bottom: 0;
   }
 }
+  /* 每条新闻保持完整，条目之间至少留 24px */
+#newsid_top .news-spread-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#newsid_top .news-spread-item {
+  flex: none;
+}
+
+#newsid_top .news-spread-body > :last-child {
+  margin-bottom: 0;
+}
+
+/* 桌面端：将剩余高度均匀分配到新闻之间 */
+@media (min-width: 901px) {
+  #newsid_top .news-spread-list {
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  /* 取消原先集中在链接上方的自动留白 */
+  #newsid_top > .well > h4:last-child {
+    margin-top: 24px;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}
 </style>
