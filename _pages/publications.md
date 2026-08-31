@@ -27,7 +27,7 @@ Michal, A., Fansher, M., <b>Sun, X.</b>, Zhang, H., & Shah, P. (2018). Cognitive
 
  <b>Sun, X.</b> & Wang, Y. (Aug 12，2026). 为什么我们既努力又拿高分，却不相信“努力让人变得更聪明”？ [Why do we work hard and achieve high scores, yet not believe that effort makes us smarter?]. MsMuses. [Read on WeChat](https://mp.weixin.qq.com/s/ro4_H_n3TRDJgcJtHYkojQ).
 
-Podcast interview with <b>Dr. Xin Sun</b> (August 5, 2025). 海外孩子到底要不要坚持学中文？｜一位双语研究学者的回答 [Should children growing up overseas keep learning Chinese? A bilingualism researcher’s perspective]. *小孩发射计划*, Episode 1 (in Chinese). [Listen on Xiaoyuzhou](https://www.xiaoyuzhoufm.com/episode/6a725544ab3a91c24a0fdf9c).
+Podcast interview with <b>Dr. Xin Sun</b> (August 5，2026). 海外孩子到底要不要坚持学中文？｜一位双语研究学者的回答 [Should children growing up overseas keep learning Chinese? A bilingualism researcher’s perspective]. *小孩发射计划*, Episode 1 (in Chinese). [Listen on Xiaoyuzhou](https://www.xiaoyuzhoufm.com/episode/6a725544ab3a91c24a0fdf9c).
 
 Q&A with <b>Dr. Xin Sun</b> on exploring infant & toddler minds (lexico-semantic representations) (June 11, 2025). UBC Language Sciences. Link to the interview: [https://languagesciences.ubc.ca/news/june-06-2025/qa-dr-xin-sun-exploring-infant-toddler-minds-lexico-semantic-representations](https://languagesciences.ubc.ca/news/june-06-2025/qa-dr-xin-sun-exploring-infant-toddler-minds-lexico-semantic-representations)
 
