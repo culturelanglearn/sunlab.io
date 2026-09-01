@@ -23,7 +23,9 @@ Huo, M., <b>Sun, X.</b>, Kovelman, I., & Chen, B. (2023). Literacy development i
 Michal, A., Fansher, M., <b>Sun, X.</b>, Zhang, H., & Shah, P. (2018). Cognitive development. The Oxford Handbook of Educational Psychology. Oxford, UK: Oxford University Press [https://doi.org/10.1093/oxfordhb/9780199841332.013.7](https://doi.org/10.1093/oxfordhb/9780199841332.013.7)
 
 
-## Public outreach & Non-academic Publications
+<h2 id="outreach" style="scroll-margin-top: 70px;">
+  Public Outreach &amp; Non-academic Publications
+</h2>
 
  <b>Sun, X.</b> & Wang, Y. (Aug 12, 2026). 为什么我们既努力又拿高分，却不相信“努力让人变得更聪明”？ [Why do we work hard and achieve high scores, yet not believe that effort makes us smarter?]. MsMuses. [Read on WeChat](https://mp.weixin.qq.com/s/ro4_H_n3TRDJgcJtHYkojQ).
 
