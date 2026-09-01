@@ -3,7 +3,7 @@ title: "Sun Lab - Outreach"
 layout: gridlay
 excerpt: "Public outreach and non-academic publications from the Culture, Language & Learning Lab."
 sitemap: false
-permalink: /outreach
+permalink: /outreach/
 ---
 
 # Public Outreach & Non-academic Publications
