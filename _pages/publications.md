@@ -19,7 +19,7 @@ Check out Dr. Sun's [google scholar](https://scholar.google.com/citations?user=D
 
 ## List of Conference Proceedings
 
-Wang, S.+, Wu, Y., Li, N., Chen, Z., Wang, G., Zhang, S., <b>Sun, X.</b>, Li, L., & Chen, Y.+ (2026). ChineseDevBench: A Chinese developmental benchmark for language development. In B.-D. Oh, T. Kuribayashi, G. Rambelli, E. Takmaz, P. Wicke, J. Li, & R. Yoshida (Eds.), *Proceedings of the 15th Workshop on Cognitive Modeling and Computational Linguistics* (pp. 10–24). European Language Resources Association (ELRA). [https://doi.org/10.63317/2an6vr7tp5hn](https://doi.org/10.63317/2an6vr7tp5hn)
+Wang, S., Wu, Y., Li, N., Chen, Z., Wang, G., Zhang, S., <b>Sun, X.</b>, Li, L., & Chen, Y.+ (2026). ChineseDevBench: A Chinese developmental benchmark for language development. In B.-D. Oh, T. Kuribayashi, G. Rambelli, E. Takmaz, P. Wicke, J. Li, & R. Yoshida (Eds.), *Proceedings of the 15th Workshop on Cognitive Modeling and Computational Linguistics* (pp. 10–24). European Language Resources Association (ELRA). [https://doi.org/10.63317/2an6vr7tp5hn](https://doi.org/10.63317/2an6vr7tp5hn)
 
 ## Full List of Book Chapters
 
