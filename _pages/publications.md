@@ -6,7 +6,7 @@ sitemap: false
 permalink: /publications
 ---
 ## Google Scholar 
-Check out Dr. Sun's [google scholar](https://scholar.google.com/citations?user=Deh6LRUAAAAJ&hl=en) for a full list of publications and links. 
+Check out Professor Sun's [google scholar](https://scholar.google.com/citations?user=Deh6LRUAAAAJ&hl=en) for a full list of publications and links. 
 
 ## Full List of Journal Publications
 '+' = corresponding author ; ____ = student mentee 

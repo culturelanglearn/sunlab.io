@@ -11,15 +11,15 @@ permalink: /director/
 <img src="{{ site.url }}{{ site.baseurl }}/images/team/Xin_profile.jpeg" alt="Culture, Language, & Learning Lab Logo" style="width: 80%; max-width: 600px; display: block; margin: 20px auto;">
 -->
 
-**Meet Dr. Xin Sun: Assistant Professor & Director of The Culture, Language, & Learning Lab**  
+**Meet Professor Xin Sun: Assistant Professor & Director of The Culture, Language, & Learning Lab**  
 
-Dr. Xin Sun received her B.S. in Psychology from Beijing Normal University, Ph.D. in Education and Psychology from the University of Michigan, Ann Arbor, and completed postdoc training at the University of British Columbia. Her research examines the behavioural and neural basis for language and reading acquisition in bilingual children using various methods, including behavioural assessments, surveys, and functional Near-Infrared Spectroscopy (fNIRS). Another line of her work looks at the role of culture in shaping individuals' intuitive beliefs about learning (i.e., beliefs about intelligence, language learning, and broadly, beliefs about the mind and brain). Dr. Sun’s work has been published in impactful journals, including Journal of Experimental Psychology: General, Child Development, Developmental Science, npj Science of Learning, and Human Brain Mapping. Dr. Sun is committed to leveraging psychology, education, and language science to understand the heterogeneity of neurocognitive profiles among children from various linguistic and cultural backgrounds and integrating brain sciences into research and applications to benefit young learners, parents, and educational practitioners.
+Professor Xin Sun received her B.S. in Psychology from Beijing Normal University, Ph.D. in Education and Psychology from the University of Michigan, Ann Arbor, and completed postdoc training at the University of British Columbia. Her research examines the behavioural and neural basis for language and reading acquisition in bilingual children using various methods, including behavioural assessments, surveys, and functional Near-Infrared Spectroscopy (fNIRS). Another line of her work looks at the role of culture in shaping individuals' intuitive beliefs about learning (i.e., beliefs about intelligence, language learning, and broadly, beliefs about the mind and brain). Professor Sun’s work has been published in impactful journals, including Journal of Experimental Psychology: General, Child Development, Developmental Science, npj Science of Learning, and Human Brain Mapping. Professor Sun is committed to leveraging psychology, education, and language science to understand the heterogeneity of neurocognitive profiles among children from various linguistic and cultural backgrounds and integrating brain sciences into research and applications to benefit young learners, parents, and educational practitioners.
 
 Contact: [xinsun@polyu.edu.hk](mailto:xinsun@polyu.edu.hk). 
 
-Check out Dr. Sun's research and past publications [here](https://scholar.google.com/citations?user=Deh6LRUAAAAJ&hl=en). 
+Check out Professor Sun's research and past publications [here](https://scholar.google.com/citations?user=Deh6LRUAAAAJ&hl=en). 
 
-Check out Dr. Sun's PolyU research page [here](https://research.polyu.edu.hk/en/persons/xin-sun/).
+Check out Professor Sun's PolyU research page [here](https://research.polyu.edu.hk/en/persons/xin-sun/).
 
 <figure class="third">
   <img src="{{ site.url }}{{ site.baseurl }}/images/logo/polyU.png" style="width: 130px">
