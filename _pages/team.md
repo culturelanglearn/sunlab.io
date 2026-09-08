@@ -10,7 +10,7 @@ permalink: /team/
 
  **We are looking for new PhD students, Postdocs, and Master students to join the team** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
 
-Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-research-fellows), [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors).
+Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-research-fellows), [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [lab alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors).
 
 <a id="director"></a>
 ## Director
@@ -119,7 +119,7 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
 {% endif %}
 
 <a id="postdoctoral-research-fellows"></a>
-## Incoming PhD Students
+## PhD Students
 {% assign number_printed = 0 %}
 {% for member in site.data.phd_students %}
 
@@ -282,7 +282,7 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
 {% endif %}
 
 <a id="alumni"></a>
-## Alumni
+## Lab Alumni
 
 {% assign number_printed = 0 %}
 {% for member in site.data.alumni_members %}
@@ -295,7 +295,7 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
 
 <div class="col-sm-6 clearfix">
   {% if member.photo %}
-    <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" 
+    <img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo_dir | default: 'teampic' }}/{{ member.photo }}" 
          class="img-responsive" 
          style="width: 150px; height: 150px; object-fit: cover; float: left; margin-right: 15px;" />
   {% endif %}
@@ -310,13 +310,21 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
     {% endif %}
   </h4>
   
-  <i>{{ member.duration }} <br> Role: {{ member.info }}</i>
+  <i>
+    {% if member.duration %}{{ member.duration }}<br>{% endif %}
+    {% if member.info %}Role: {{ member.info }}{% endif %}
+  </i>
   {% if member.email %}
     <br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
   {% endif %}
   
-  <ul style="overflow: hidden">
-
+  <ul style="overflow: hidden; padding-left: 20px;">
+  {% for i in (1..member.number_educ) %}
+    {% assign education_key = 'education' | append: i %}
+    {% if member[education_key] %}
+      <li>{{ member[education_key] | newline_to_br | markdownify }}</li>
+    {% endif %}
+  {% endfor %}
   </ul>
 </div>
 
@@ -362,4 +370,4 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
 
 <a id="administrative-support"></a>
 ## Administrative Support
-<a href="https://culturelanglearn.github.io/sunlab.io/team/">April Li</a> and <a href="https://culturelanglearn.github.io/sunlab.io/team/">Audrey Chang</a> are helping us (and other groups) with administrative support.
+<a href="https://culturelanglearn.github.io/sunlab.io/team/">April Li</a> is helping us (and other groups) with administrative support.
