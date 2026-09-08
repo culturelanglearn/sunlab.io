@@ -286,7 +286,6 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
 
 {% assign number_printed = 0 %}
 {% for member in site.data.alumni_members %}
-
 {% assign even_odd = number_printed | modulo: 2 %}
 
 {% if even_odd == 0 %}
@@ -294,46 +293,43 @@ Jump to [director](#director), [postdoctoral research fellows](#postdoctoral-res
 {% endif %}
 
 <div class="col-sm-6 clearfix">
-  {% if member.photo %}
-    <img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo_dir | default: 'teampic' }}/{{ member.photo }}" 
-         class="img-responsive" 
-         style="width: 150px; height: 150px; object-fit: cover; float: left; margin-right: 15px;" />
-  {% endif %}
-  
-  <h4>
-    {% if member.website %}
-      <a href="{{ member.website }}" target="_blank">
-        {{ member.name }}
-      </a>
-    {% else %}
-      {{ member.name }}
-    {% endif %}
-  </h4>
-  
-  <i>
-    {% if member.duration %}{{ member.duration }}<br>{% endif %}
-    {% if member.info %}Role: {{ member.info }}{% endif %}
-  </i>
-  {% if member.email %}
-    <br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
-  {% endif %}
-  
-  <ul style="overflow: hidden; padding-left: 20px;">
-  {% for i in (1..member.number_educ) %}
-    {% assign education_key = 'education' | append: i %}
-    {% if member[education_key] %}
-      <li>{{ member[education_key] | newline_to_br | markdownify }}</li>
-    {% endif %}
-  {% endfor %}
-  </ul>
+{% if member.photo %}
+<img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo_dir | default: 'teampic' }}/{{ member.photo }}"
+     class="img-responsive"
+     alt="{{ member.name }}"
+     style="width: 150px; height: 150px; object-fit: cover; float: left; margin-right: 15px;" />
+{% endif %}
+
+<h4>
+{% if member.website %}
+<a href="{{ member.website }}" target="_blank">{{ member.name }}</a>
+{% else %}
+{{ member.name }}
+{% endif %}
+</h4>
+
+{% if member.duration or member.info %}
+<i>{% if member.duration %}{{ member.duration }}<br>{% endif %}{% if member.info %}Role: {{ member.info }}{% endif %}</i>
+{% endif %}
+
+{% if member.email %}
+<br><a href="mailto:{{ member.email }}">{{ member.email }}</a>
+{% endif %}
+
+<ul style="overflow: hidden; padding-left: 20px;">
+{% for i in (1..member.number_educ) %}
+{% assign education_key = 'education' | append: i %}
+{% if member[education_key] %}
+<li>{{ member[education_key] | newline_to_br | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+{% endif %}
+{% endfor %}
+</ul>
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
-
 {% if even_odd == 1 %}
 </div>
 {% endif %}
-
 {% endfor %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
